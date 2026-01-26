@@ -1,0 +1,36 @@
+---
+title: "Weather Dashboard"
+description: "A beautiful weather dashboard that displays current conditions and forecasts using data from multiple weather APIs."
+tags: ["React", "TypeScript", "API Integration", "Charts"]
+url: "https://example.com/weather"
+github: "https://github.com/example/weather-dashboard"
+---
+
+## Overview
+
+Weather Dashboard is a personal project I built to practice working with external APIs and data visualization. It provides current weather conditions, hourly forecasts, and 7-day predictions.
+
+## Features
+
+- **Current Conditions**: Temperature, humidity, wind, and more
+- **Hourly Forecast**: See what's coming in the next 24 hours
+- **Weekly Outlook**: Plan your week with 7-day forecasts
+- **Location Search**: Get weather for any city worldwide
+- **Beautiful Charts**: Visualize temperature and precipitation trends
+
+## Technical Implementation
+
+The dashboard uses React with TypeScript for type safety. Weather data comes from the OpenWeatherMap API, and I used Recharts for the data visualizations.
+
+```typescript
+async function fetchWeather(city: string) {
+  const response = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
+  );
+  return response.json();
+}
+```
+
+## Design Philosophy
+
+I focused on creating a clean, scannable interface that surfaces the most important information first. The color palette adapts based on the current weather conditions.

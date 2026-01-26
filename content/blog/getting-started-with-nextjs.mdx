@@ -1,0 +1,62 @@
+---
+title: "Getting Started with Next.js 15"
+excerpt: "A comprehensive guide to building modern web applications with Next.js 15 and the App Router."
+date: "2024-12-15"
+---
+
+Next.js 15 brings several exciting improvements to the React framework, making it easier than ever to build fast, scalable web applications. In this post, I'll walk you through the basics of getting started.
+
+## Why Next.js?
+
+Next.js provides an excellent developer experience with features like:
+
+- **Server Components**: Reduce client-side JavaScript
+- **File-based Routing**: Intuitive page organization
+- **Built-in Optimizations**: Automatic code splitting and image optimization
+- **Flexible Rendering**: SSG, SSR, and ISR out of the box
+
+## Creating Your First Project
+
+Getting started is as simple as running:
+
+```bash
+npx create-next-app@latest my-app
+```
+
+This sets up a complete project with TypeScript, ESLint, and Tailwind CSS.
+
+## App Router Basics
+
+The App Router uses a folder-based routing system. Each folder in the `app` directory represents a route:
+
+```
+app/
+├── page.tsx          # /
+├── about/
+│   └── page.tsx      # /about
+└── blog/
+    ├── page.tsx      # /blog
+    └── [slug]/
+        └── page.tsx  # /blog/any-slug
+```
+
+## Server vs Client Components
+
+By default, components in the App Router are Server Components. Add the `"use client"` directive at the top of a file to make it a Client Component:
+
+```tsx
+"use client";
+
+import { useState } from "react";
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
+}
+```
+
+## Conclusion
+
+Next.js 15 is a powerful framework for building modern web applications. The App Router provides a more intuitive way to structure your code, and Server Components help reduce the JavaScript sent to the browser.
+
+Happy coding!

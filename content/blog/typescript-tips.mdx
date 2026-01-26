@@ -1,0 +1,84 @@
+---
+title: "5 TypeScript Tips for Better Code"
+excerpt: "Practical TypeScript patterns that will make your code more maintainable and type-safe."
+date: "2024-11-28"
+---
+
+TypeScript can dramatically improve your development experience, but it takes time to learn all its features. Here are five tips I've found invaluable.
+
+## 1. Use const assertions for literal types
+
+When you need exact literal types instead of widened types:
+
+```typescript
+// Without const assertion
+const config = { theme: "dark" }; // { theme: string }
+
+// With const assertion
+const config = { theme: "dark" } as const; // { theme: "dark" }
+```
+
+## 2. Leverage discriminated unions
+
+When you have multiple related types, use a common property to discriminate:
+
+```typescript
+type Success = { status: "success"; data: string };
+type Error = { status: "error"; message: string };
+type Result = Success | Error;
+
+function handle(result: Result) {
+  if (result.status === "success") {
+    console.log(result.data); // TypeScript knows this is Success
+  } else {
+    console.log(result.message); // TypeScript knows this is Error
+  }
+}
+```
+
+## 3. Use satisfies for type checking without widening
+
+The `satisfies` operator ensures a value matches a type while preserving its literal types:
+
+```typescript
+const colors = {
+  primary: "#f97316",
+  secondary: "#3b82f6",
+} satisfies Record<string, string>;
+
+// colors.primary is still "#f97316", not string
+```
+
+## 4. Template literal types for string patterns
+
+Create precise string types:
+
+```typescript
+type HttpMethod = "GET" | "POST" | "PUT" | "DELETE";
+type Endpoint = `/api/${string}`;
+
+function fetchData(method: HttpMethod, url: Endpoint) {
+  // ...
+}
+
+fetchData("GET", "/api/users"); // OK
+fetchData("GET", "/not-api"); // Error!
+```
+
+## 5. Use infer in conditional types
+
+Extract types from other types:
+
+```typescript
+type GetReturnType<T> = T extends (...args: never[]) => infer R ? R : never;
+
+function greet() {
+  return "Hello!";
+}
+
+type Greeting = GetReturnType<typeof greet>; // string
+```
+
+## Conclusion
+
+These patterns have made my TypeScript code more expressive and type-safe. The key is to leverage the type system to catch errors at compile time rather than runtime.
