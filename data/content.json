@@ -12,10 +12,8 @@
       "Advertising"
     ],
     "topics": [
-      "Recruitment and Layoffs",
-      "Organizational Culture",
-      "Work-Life Balance",
-      "Employee Experience"
+      "Workforce",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -32,8 +30,7 @@
       "Energy"
     ],
     "topics": [
-      "Solar Energy",
-      "Energy Efficiency"
+      "Sustainability"
     ],
     "tags": []
   },
@@ -50,8 +47,7 @@
       "Energy"
     ],
     "topics": [
-      "Renewable Energy",
-      "Solar Energy"
+      "Sustainability"
     ],
     "tags": []
   },
@@ -68,7 +64,7 @@
       "Manufacturer"
     ],
     "topics": [
-      "Investor Relations"
+      "Finance"
     ],
     "tags": []
   },
@@ -85,8 +81,8 @@
       "Manufacturer"
     ],
     "topics": [
-      "Investor Relations",
-      "Annual Review"
+      "Finance",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -101,11 +97,10 @@
     "organization": "Birdie",
     "industry": [
       "Marketing",
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Experience",
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -119,10 +114,10 @@
     "person": "",
     "organization": "Birdie",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Project Management"
+      "Automation"
     ],
     "tags": []
   },
@@ -136,10 +131,10 @@
     "person": "",
     "organization": "Birdie",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Product Management"
+      "Product"
     ],
     "tags": []
   },
@@ -153,10 +148,10 @@
     "person": "",
     "organization": "Blameless",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Software Engineering"
+      "Technology"
     ],
     "tags": []
   },
@@ -170,11 +165,9 @@
     "person": "",
     "organization": "Bloomberg",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Responsible AI",
-      "Generative AI",
       "AI"
     ],
     "tags": []
@@ -189,8 +182,8 @@
     "person": "",
     "organization": "Bloomberg",
     "industry": [
-      "Software Development",
-      "IT Support and Management"
+      "Software-Development",
+      "IT-Support-and-Management"
     ],
     "topics": [],
     "tags": []
@@ -208,7 +201,7 @@
       "Marketing"
     ],
     "topics": [
-      "Creators"
+      "Content-Strategy"
     ],
     "tags": []
   },
@@ -225,19 +218,19 @@
       "Advertising"
     ],
     "topics": [
-      "User Generated Content"
+      "Content-Strategy"
     ],
     "tags": []
   },
   {
-    "id": "how-advertisers-can-harness-the-power-of-ai-in-a-cookieless-era-channe-yyemst",
-    "title": "How Advertisers Can Harness the Power of AI in a Cookieless Era",
+    "id": "unlocking-the-power-of-ai-a-roadmap-for-advertisers-in-a-cookieless-er-j6aqtf",
+    "title": "Unlocking the Power of AI- A Roadmap for Advertisers in a Cookieless Era",
     "url": "https://advertisingweek.com/how-advertisers-can-harness-the-power-of-ai-in-a-cookieless-era/",
     "published": "2024-02-16s:",
     "contentType": "Byline",
     "publication": "AdvertisingWeek",
     "person": "",
-    "organization": "Channel Mix",
+    "organization": "UpWave",
     "industry": [
       "Adtech"
     ],
@@ -276,7 +269,7 @@
       "Advertising"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -293,7 +286,7 @@
       "Advertising"
     ],
     "topics": [
-      "Marketing Mix Modeling"
+      "Media"
     ],
     "tags": []
   },
@@ -310,7 +303,7 @@
       "Advertising"
     ],
     "topics": [
-      "Sales Lift"
+      "Advertising"
     ],
     "tags": []
   },
@@ -359,7 +352,7 @@
     "organization": "Circana",
     "industry": [
       "Advertising",
-      "Retail Chain",
+      "Retail-Chain",
       "CPG"
     ],
     "topics": [
@@ -409,10 +402,10 @@
     "person": "",
     "organization": "ConquestVR",
     "industry": [
-      "Media and Entertainment Company"
+      "Media-and-Entertainment-Company"
     ],
     "topics": [
-      "Educational Resources"
+      "Education"
     ],
     "tags": []
   },
@@ -426,12 +419,11 @@
     "person": "",
     "organization": "ConquestVR",
     "industry": [
-      "Media and Entertainment Company",
-      "All Tech"
+      "Media-and-Entertainment-Company",
+      "All-Tech"
     ],
     "topics": [
-      "VR-AR",
-      "Virtual Reality"
+      "VR-AR"
     ],
     "tags": []
   },
@@ -445,11 +437,11 @@
     "person": "",
     "organization": "ConquestVR",
     "industry": [
-      "Media and Entertainment Company",
-      "All Tech"
+      "Media-and-Entertainment-Company",
+      "All-Tech"
     ],
     "topics": [
-      "Virtual Reality"
+      "VR-AR"
     ],
     "tags": []
   },
@@ -463,7 +455,7 @@
     "person": "",
     "organization": "Cratoflow",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
       "Finance"
@@ -480,7 +472,7 @@
     "person": "",
     "organization": "Cratoflow",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
       "Finance"
@@ -497,11 +489,11 @@
     "person": "",
     "organization": "Cratoflow",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Employee Experience",
-      "Productivity Strategies"
+      "Workforce",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -535,7 +527,7 @@
       "Marketing"
     ],
     "topics": [
-      "Affiliate Marketing"
+      "Advertising"
     ],
     "tags": []
   },
@@ -549,12 +541,12 @@
     "person": "",
     "organization": "Data Zoo",
     "industry": [
-      "Cybersecurity Firm",
+      "Cybersecurity-Firm",
       "Sales"
     ],
     "topics": [
-      "Identify Verification",
-      "Digital Accounts"
+      "Identity-Verification",
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -568,13 +560,13 @@
     "person": "",
     "organization": "Data Zoo",
     "industry": [
-      "Financial Services",
-      "Cybersecurity Firm"
+      "Financial-Services",
+      "Cybersecurity-Firm"
     ],
     "topics": [
-      "Fraud prevention",
-      "Identify Verification",
-      "Data Quality"
+      "Risk-Compliance",
+      "Identity-Verification",
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -588,11 +580,11 @@
     "person": "",
     "organization": "Data Zoo",
     "industry": [
-      "Cybersecurity Firm"
+      "Cybersecurity-Firm"
     ],
     "topics": [
-      "Fraud prevention",
-      "Identify Verification"
+      "Risk-Compliance",
+      "Identity-Verification"
     ],
     "tags": []
   },
@@ -606,12 +598,11 @@
     "person": "",
     "organization": "Data Zoo",
     "industry": [
-      "Cybersecurity Firm"
+      "Cybersecurity-Firm"
     ],
     "topics": [
-      "Age Verification",
-      "Data Quality",
-      "Identify Verification"
+      "Identity-Verification",
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -628,7 +619,7 @@
       "Logistics"
     ],
     "topics": [
-      "Dash Cams"
+      "Fleet"
     ],
     "tags": []
   },
@@ -646,7 +637,7 @@
       "Insurance"
     ],
     "topics": [
-      "Video Telemetrics"
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -663,8 +654,8 @@
       "Marketing"
     ],
     "topics": [
-      "B2B Marketing",
-      "Marketing Automation"
+      "B2B-Marketing",
+      "Marketing-Automation"
     ],
     "tags": []
   },
@@ -681,8 +672,7 @@
       "Marketing"
     ],
     "topics": [
-      "Responsible AI",
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -696,11 +686,10 @@
     "person": "",
     "organization": "Factoreal",
     "industry": [
-      "Sports Company"
+      "Sports-Company"
     ],
     "topics": [
-      "Sports Marketing",
-      "Sports Team or Association"
+      "Sports-Marketing"
     ],
     "tags": []
   },
@@ -714,11 +703,11 @@
     "person": "",
     "organization": "Factoreal",
     "industry": [
-      "Sports Team or Association",
-      "Sports Company"
+      "Sports-Team-or-Association",
+      "Sports-Company"
     ],
     "topics": [
-      "Sports Marketing"
+      "Sports-Marketing"
     ],
     "tags": []
   },
@@ -736,7 +725,7 @@
     ],
     "topics": [
       "Consumer-Technology",
-      "Sports Marketing"
+      "Sports-Marketing"
     ],
     "tags": []
   },
@@ -750,11 +739,10 @@
     "person": "",
     "organization": "Forge Global",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Wealth Management",
-      "Alternative Investments"
+      "Finance"
     ],
     "tags": []
   },
@@ -768,11 +756,10 @@
     "person": "",
     "organization": "Forge Global",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Wealth Management",
-      "Alternative Investments"
+      "Finance"
     ],
     "tags": []
   },
@@ -786,11 +773,10 @@
     "person": "",
     "organization": "Forge Global",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Alternative Investments",
-      "Wealth Management"
+      "Finance"
     ],
     "tags": []
   },
@@ -804,13 +790,11 @@
     "person": "",
     "organization": "Forge Global",
     "industry": [
-      "Public Relations",
-      "Financial Services"
+      "Public-Relations",
+      "Financial-Services"
     ],
     "topics": [
-      "Wealth Management",
-      "Alternative Investments",
-      "Private Equity"
+      "Finance"
     ],
     "tags": []
   },
@@ -824,12 +808,11 @@
     "person": "",
     "organization": "Forge Global",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
       "Workforce",
-      "Alternative Investments",
-      "Wealth Management"
+      "Finance"
     ],
     "tags": []
   },
@@ -846,7 +829,7 @@
       "Logistics"
     ],
     "topics": [
-      "Expense Management"
+      "Finance"
     ],
     "tags": []
   },
@@ -863,26 +846,7 @@
       "Logistics"
     ],
     "topics": [
-      "Fuel Costs"
-    ],
-    "tags": []
-  },
-  {
-    "id": "6-ways-to-rein-in-your-company-s-expenses-in-2023-fuelman-2023-01-25s-k2vr4d",
-    "title": "6 Ways to Rein in Your Company's Expenses in 2023",
-    "url": "https://partners.bizjournals.com/6-ways-to-rein-in-your-companys-expenses-in-2023/",
-    "published": "2023-01-25s:",
-    "contentType": "Sponsored Content",
-    "publication": "Biz Journals",
-    "person": "",
-    "organization": "Fuelman",
-    "industry": [
-      "Logistics"
-    ],
-    "topics": [
-      "Expense Management",
-      "Finance",
-      "Contract Renewals"
+      "Fleet"
     ],
     "tags": []
   },
@@ -899,7 +863,24 @@
       "Logistics"
     ],
     "topics": [
-      "Expense Management"
+      "Finance"
+    ],
+    "tags": []
+  },
+  {
+    "id": "6-ways-to-rein-in-your-company-s-expenses-in-2023-fuelman-2023-01-25s-ald15x",
+    "title": "6 Ways to Rein in Your Company’s Expenses in 2023",
+    "url": "https://partners.bizjournals.com/6-ways-to-rein-in-your-companys-expenses-in-2023/",
+    "published": "2023-01-25s:",
+    "contentType": "Sponsored Content",
+    "publication": "Biz Journals",
+    "person": "",
+    "organization": "Fuelman",
+    "industry": [
+      "Logistics"
+    ],
+    "topics": [
+      "Finance"
     ],
     "tags": []
   },
@@ -916,7 +897,7 @@
       "Advertising"
     ],
     "topics": [
-      "Creative Agency"
+      "Creative-Agency"
     ],
     "tags": []
   },
@@ -931,7 +912,7 @@
     "organization": "GERTRUDE",
     "industry": [],
     "topics": [
-      "Creative Agency"
+      "Creative-Agency"
     ],
     "tags": []
   },
@@ -945,10 +926,10 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm"
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Recruitment and Layoffs"
+      "Workforce"
     ],
     "tags": []
   },
@@ -962,10 +943,10 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm"
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Founder Relationships"
+      "Company-Building"
     ],
     "tags": []
   },
@@ -979,12 +960,12 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm"
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Company Building",
-      "Organizational Culture",
-      "Employee Experience"
+      "Company-Building",
+      "Work-Culture",
+      "Workforce"
     ],
     "tags": []
   },
@@ -998,11 +979,11 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm"
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Recruitment and Layoffs",
-      "DEI and ESG"
+      "Workforce",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -1016,10 +997,10 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm"
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Recruitment and Layoffs"
+      "Workforce"
     ],
     "tags": []
   },
@@ -1033,11 +1014,11 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm"
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Recruitment and Layoffs",
-      "Founder Relationships"
+      "Workforce",
+      "Company-Building"
     ],
     "tags": []
   },
@@ -1051,10 +1032,10 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm"
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Recruitment and Layoffs"
+      "Workforce"
     ],
     "tags": []
   },
@@ -1068,12 +1049,11 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm"
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Company Strategy",
-      "Human resource management",
-      "Recruitment and Layoffs"
+      "Company-Building",
+      "Workforce"
     ],
     "tags": []
   },
@@ -1087,12 +1067,11 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "Public Relations",
-      "HR/Recruiting Firm"
+      "Public-Relations",
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Recruitment and Layoffs",
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -1106,12 +1085,12 @@
     "person": "",
     "organization": "GoodTime.io",
     "industry": [
-      "HR/Recruiting Firm",
-      "All Tech"
+      "HR/Recruiting-Firm",
+      "All-Tech"
     ],
     "topics": [
-      "Recruitment and Layoffs",
-      "DEI and ESG"
+      "Workforce",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -1125,7 +1104,7 @@
     "person": "",
     "organization": "Heavy Reel Brewing Co",
     "industry": [
-      "Brewery / Distillery"
+      "Brewery-/-Distillery"
     ],
     "topics": [],
     "tags": []
@@ -1140,7 +1119,7 @@
     "person": "",
     "organization": "Hidden Sands Brewing Co",
     "industry": [
-      "Brewery / Distillery"
+      "Brewery-/-Distillery"
     ],
     "topics": [],
     "tags": []
@@ -1158,8 +1137,8 @@
       "Marketing"
     ],
     "topics": [
-      "B2B Marketing",
-      "Tech Stacks"
+      "B2B-Marketing",
+      "Technology"
     ],
     "tags": []
   },
@@ -1176,7 +1155,7 @@
       "Marketing"
     ],
     "topics": [
-      "B2B Marketing"
+      "B2B-Marketing"
     ],
     "tags": []
   },
@@ -1193,7 +1172,7 @@
       "Marketing"
     ],
     "topics": [
-      "B2B Marketing"
+      "B2B-Marketing"
     ],
     "tags": []
   },
@@ -1210,7 +1189,7 @@
       "Marketing"
     ],
     "topics": [
-      "B2B Marketing"
+      "B2B-Marketing"
     ],
     "tags": []
   },
@@ -1227,7 +1206,7 @@
       "Marketing"
     ],
     "topics": [
-      "Marketing Data"
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -1244,7 +1223,7 @@
       "Marketing"
     ],
     "topics": [
-      "Marketing Automation"
+      "Marketing-Automation"
     ],
     "tags": []
   },
@@ -1261,7 +1240,7 @@
       "Marketing"
     ],
     "topics": [
-      "B2B Marketing"
+      "B2B-Marketing"
     ],
     "tags": []
   },
@@ -1275,10 +1254,10 @@
     "person": "",
     "organization": "Kyndryl",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Mainframe Computing"
+      "Technology"
     ],
     "tags": []
   },
@@ -1292,11 +1271,11 @@
     "person": "",
     "organization": "Kyndryl",
     "industry": [
-      "Cybersecurity Firm"
+      "Cybersecurity-Firm"
     ],
     "topics": [
-      "Security and Infrastructure",
-      "Mainframe Computing"
+      "Security-and-Infrastructure",
+      "Technology"
     ],
     "tags": []
   },
@@ -1329,8 +1308,8 @@
       "Advertising"
     ],
     "topics": [
-      "Digital Out of Home",
-      "Sports Marketing"
+      "Advertising",
+      "Sports-Marketing"
     ],
     "tags": []
   },
@@ -1347,8 +1326,8 @@
       "Advertising"
     ],
     "topics": [
-      "Streaming Media",
-      "Digital Out of Home"
+      "Media",
+      "Advertising"
     ],
     "tags": []
   },
@@ -1365,7 +1344,7 @@
       "Sales"
     ],
     "topics": [
-      "Customer Retention"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -1382,8 +1361,8 @@
       "Sales"
     ],
     "topics": [
-      "Customer Retention",
-      "Contract Renewals"
+      "Customer-Experience",
+      "Contracts"
     ],
     "tags": []
   },
@@ -1397,13 +1376,10 @@
     "person": "",
     "organization": "Matik",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Experience",
-      "Customer Service",
-      "Customer Retention",
-      "Customer Satisfaction"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -1420,9 +1396,7 @@
       "Sales"
     ],
     "topics": [
-      "Customer Satisfaction",
-      "Customer Service",
-      "Customer Retention"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -1436,11 +1410,11 @@
     "person": "",
     "organization": "OnSolve",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Risk Management",
-      "Employee Experience"
+      "Risk-Compliance",
+      "Workforce"
     ],
     "tags": []
   },
@@ -1454,10 +1428,10 @@
     "person": "",
     "organization": "OnSolve",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Risk Management"
+      "Risk-Compliance"
     ],
     "tags": []
   },
@@ -1471,12 +1445,11 @@
     "person": "",
     "organization": "PR Council",
     "industry": [
-      "Public Relations"
+      "Public-Relations"
     ],
     "topics": [
-      "Human resource management",
-      "Employee Experience",
-      "Stress management and relaxation techniques"
+      "Workforce",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -1490,11 +1463,11 @@
     "person": "",
     "organization": "Pretty Big Monster",
     "industry": [
-      "All Tech",
-      "Media and Entertainment Company"
+      "All-Tech",
+      "Media-and-Entertainment-Company"
     ],
     "topics": [
-      "Augmented Reality"
+      "VR-AR"
     ],
     "tags": []
   },
@@ -1508,8 +1481,8 @@
     "person": "",
     "organization": "Pretty Big Monster",
     "industry": [
-      "All Tech",
-      "Media and Entertainment Company"
+      "All-Tech",
+      "Media-and-Entertainment-Company"
     ],
     "topics": [
       "VR-AR"
@@ -1526,7 +1499,7 @@
     "person": "",
     "organization": "Pretty Big Monster",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
       "VR-AR"
@@ -1544,8 +1517,8 @@
     "organization": "Rasa",
     "industry": [],
     "topics": [
-      "Work Tools",
-      "Return to Work/Office"
+      "Work-Culture",
+      "Workforce"
     ],
     "tags": []
   },
@@ -1559,11 +1532,10 @@
     "person": "",
     "organization": "Rasa",
     "industry": [
-      "Artificial Intelligence"
+      "Artificial-Intelligence"
     ],
     "topics": [
-      "AI Orchestration",
-      "AI Agents"
+      "AI"
     ],
     "tags": []
   },
@@ -1578,8 +1550,8 @@
     "organization": "Rasa",
     "industry": [],
     "topics": [
-      "AI Agents",
-      "Security and Infrastructure"
+      "AI",
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -1593,12 +1565,10 @@
     "person": "",
     "organization": "Rasa",
     "industry": [
-      "Artificial Intelligence"
+      "Artificial-Intelligence"
     ],
     "topics": [
-      "Generative AI",
-      "AI Orchestration",
-      "AI Agents"
+      "AI"
     ],
     "tags": []
   },
@@ -1613,10 +1583,10 @@
     "organization": "ReadySetRocket",
     "industry": [
       "Advertising",
-      "Nonprofit Organization"
+      "Nonprofit-Organization"
     ],
     "topics": [
-      "Systems Thinking"
+      "Change-Management"
     ],
     "tags": []
   },
@@ -1630,10 +1600,10 @@
     "person": "",
     "organization": "Socialize",
     "industry": [
-      "Social Media Company"
+      "Social-Media-Company"
     ],
     "topics": [
-      "TikTok Marketing"
+      "Advertising"
     ],
     "tags": []
   },
@@ -1651,7 +1621,7 @@
       "Restaurant"
     ],
     "topics": [
-      "Employee Experience",
+      "Workforce",
       "Benefits"
     ],
     "tags": []
@@ -1669,7 +1639,7 @@
       "Bakery/Cafe"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -1686,7 +1656,7 @@
       "Bakery/Cafe"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -1720,8 +1690,8 @@
       "Adtech"
     ],
     "topics": [
-      "Streaming Media",
-      "Advertising Measurement"
+      "Media",
+      "Advertising"
     ],
     "tags": []
   },
@@ -1739,7 +1709,7 @@
       "Adtech"
     ],
     "topics": [
-      "Streaming Media"
+      "Media"
     ],
     "tags": []
   },
@@ -1753,11 +1723,11 @@
     "person": "",
     "organization": "The Clearing House",
     "industry": [
-      "Public Relations",
-      "Financial Services"
+      "Public-Relations",
+      "Financial-Services"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -1771,11 +1741,11 @@
     "person": "",
     "organization": "The Clearing House",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
       "Benefits",
-      "Real-time Payments"
+      "Finance"
     ],
     "tags": []
   },
@@ -1789,15 +1759,15 @@
     "person": "",
     "organization": "TimeRepublik",
     "industry": [
-      "Nonprofit Organization"
+      "Nonprofit-Organization"
     ],
     "topics": [
-      "Time banking"
+      "Benefits"
     ],
     "tags": []
   },
   {
-    "id": "on-the-enduring-power-of-the-blank-canvas-total-emphasis-2023-03-18s-8fl3p0",
+    "id": "on-the-enduring-power-of-the-blank-canvas-total-emphasis-2023-03-18s-70pr7m",
     "title": "On the Enduring Power of the Blank Canvas",
     "url": "https://survivalsignal.beehiiv.com/p/enduring-power-blank-canvas",
     "published": "2023-03-18s:",
@@ -1806,28 +1776,27 @@
     "person": "",
     "organization": "Total Emphasis",
     "industry": [
-      "Content Strategy"
+      "Content-Strategy"
     ],
     "topics": [
-      "Essay Writing"
+      "Essay-Writing"
     ],
     "tags": []
   },
   {
-    "id": "on-the-enduring-power-of-the-blank-canvas-total-emphasis-2023-03-18-1jlqdo",
+    "id": "on-the-enduring-power-of-the-blank-canvas-total-emphasis-2023-03-18s-70pr7m",
     "title": "On the Enduring Power of the Blank Canvas",
     "url": "https://survivalsignal.beehiiv.com/p/enduring-power-blank-canvas",
-    "published": "2023-03-18",
+    "published": "2023-03-18s:",
     "contentType": "Newsletter",
     "publication": "Survival Signal",
-    "person": "[Keith O'Brien]",
-    "organization": "[Total Emphasis]",
+    "person": "",
+    "organization": "Total Emphasis",
     "industry": [
-      "Media & Content"
+      "Content-Strategy"
     ],
     "topics": [
-      "Essay-Writing",
-      "Content-Strategy"
+      "Essay-Writing"
     ],
     "tags": []
   },
@@ -1841,11 +1810,11 @@
     "person": "",
     "organization": "UBS",
     "industry": [
-      "Venture Capital",
+      "Venture-Capital",
       "Startups"
     ],
     "topics": [
-      "Financial Strategy"
+      "Finance"
     ],
     "tags": []
   },
@@ -1862,7 +1831,7 @@
       "Manufacturer"
     ],
     "topics": [
-      "Maintenance Strategy"
+      "Maintenance-Strategy"
     ],
     "tags": []
   },
@@ -1876,10 +1845,10 @@
     "person": "",
     "organization": "UST",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Organizational Culture"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -1893,7 +1862,7 @@
     "person": "",
     "organization": "UST",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
       "Healthcare"
@@ -1910,7 +1879,7 @@
     "person": "",
     "organization": "UST",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
       "Retail"
@@ -1930,7 +1899,7 @@
       "All Technology"
     ],
     "topics": [
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -1947,7 +1916,7 @@
       "All Technology"
     ],
     "topics": [
-      "Digital Engineering"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -1964,7 +1933,7 @@
       "All Technology"
     ],
     "topics": [
-      "Cloud Myths"
+      "Cloud"
     ],
     "tags": []
   },
@@ -1981,7 +1950,7 @@
       "Cybersecurity Firm"
     ],
     "topics": [
-      "Security and Infrastructure"
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -1998,7 +1967,7 @@
       "Artificial Intelligence"
     ],
     "topics": [
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -2032,7 +2001,7 @@
       "Software Development"
     ],
     "topics": [
-      "Product Management"
+      "Product"
     ],
     "tags": []
   },
@@ -2049,7 +2018,7 @@
       "IT Support and Management"
     ],
     "topics": [
-      "Maintenance Strategy"
+      "Maintenance-Strategy"
     ],
     "tags": []
   },
@@ -2066,7 +2035,7 @@
       "All Technology"
     ],
     "topics": [
-      "Cost Savings"
+      "Cost-Savings"
     ],
     "tags": []
   },
@@ -2098,7 +2067,7 @@
       "All Technology"
     ],
     "topics": [
-      "Smart Cities"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2115,7 +2084,7 @@
       "All Technology"
     ],
     "topics": [
-      "Anticipatory Government"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2132,7 +2101,7 @@
       "IT Support and Management"
     ],
     "topics": [
-      "Cloud Infrastructure"
+      "Cloud"
     ],
     "tags": []
   },
@@ -2149,7 +2118,7 @@
       "All Technology"
     ],
     "topics": [
-      "Cloud Migration"
+      "Cloud"
     ],
     "tags": []
   },
@@ -2166,7 +2135,7 @@
       "IT Support and Management"
     ],
     "topics": [
-      "Cloud Infrastructure"
+      "Cloud"
     ],
     "tags": []
   },
@@ -2183,7 +2152,7 @@
       "All Technology"
     ],
     "topics": [
-      "Cloud Infrastructure"
+      "Cloud"
     ],
     "tags": []
   },
@@ -2249,7 +2218,7 @@
       "All Technology"
     ],
     "topics": [
-      "Product Engineering"
+      "Product"
     ],
     "tags": []
   },
@@ -2266,7 +2235,7 @@
       "- All Technology #business-subcategory - Healthcare #business-subcategory"
     ],
     "topics": [
-      "Digital Engineering"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2300,7 +2269,7 @@
       "All Technology"
     ],
     "topics": [
-      "Competitive Analysis"
+      "B2B-Marketing"
     ],
     "tags": []
   },
@@ -2317,7 +2286,7 @@
       "All Technology"
     ],
     "topics": [
-      "Organizational Culture"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -2334,7 +2303,7 @@
       "All Technology"
     ],
     "topics": [
-      "Supply Chain"
+      "Procurement"
     ],
     "tags": []
   },
@@ -2351,7 +2320,7 @@
       "- All Technology #business-subcategory - CPG #business-subcategory"
     ],
     "topics": [
-      "Digital Maturity"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2368,7 +2337,7 @@
       "IT Support and Management"
     ],
     "topics": [
-      "Low code/no code"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2385,7 +2354,7 @@
       "All Technology"
     ],
     "topics": [
-      "Digital Engineering"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2402,7 +2371,7 @@
       "All Technology"
     ],
     "topics": [
-      "Organizational Culture"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -2419,7 +2388,7 @@
       "All Technology"
     ],
     "topics": [
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -2436,7 +2405,7 @@
       "IT Support and Management"
     ],
     "topics": [
-      "Product Engineering"
+      "Product"
     ],
     "tags": []
   },
@@ -2453,7 +2422,7 @@
       "All Technology"
     ],
     "topics": [
-      "Customer Experience"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -2470,13 +2439,13 @@
       "All Technology"
     ],
     "topics": [
-      "App Modernization"
+      "Digital-Transformation"
     ],
     "tags": []
   },
   {
-    "id": "if-not-now-then-when-how-covid-19-has-reinforced-the-need-to-prioritiz-ga8ke",
-    "title": "If Not Now, Then When- How Covid-19 Has Reinforced the Need to Prioritize Employee Experience",
+    "id": "if-not-now-then-when-how-covid-19-has-reinforced-the-need-to-prioritiz-trb9wa",
+    "title": "If Not Now, Then When- How Covid-19 Has Reinforced the Need to Prioritize Employee Experience -…",
     "url": "https://www.ust.com/en/insights/if-not-now-then-when-how-covid19-has-reinforced-the-need-to-prioritize-employee-experience",
     "published": "2020-09-24s:",
     "contentType": "Blog",
@@ -2484,10 +2453,10 @@
     "person": "",
     "organization": "UST",
     "industry": [
-      "All Technology"
+      "All-Tech"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -2504,7 +2473,7 @@
       "IT Support and Management"
     ],
     "topics": [
-      "Digital Experience and UX"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2521,7 +2490,7 @@
       "Cybersecurity Firm"
     ],
     "topics": [
-      "Security and Infrastructure"
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -2538,7 +2507,7 @@
       "Cybersecurity Firm"
     ],
     "topics": [
-      "Banking Innovations"
+      "Finance"
     ],
     "tags": []
   },
@@ -2589,7 +2558,7 @@
       "All Technology"
     ],
     "topics": [
-      "Organizational Culture"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -2623,7 +2592,7 @@
       "IT Support and Management"
     ],
     "topics": [
-      "Cloud Migration"
+      "Cloud"
     ],
     "tags": []
   },
@@ -2640,7 +2609,7 @@
       "All Technology"
     ],
     "topics": [
-      "Build-to-build Trap"
+      "Product"
     ],
     "tags": []
   },
@@ -2657,7 +2626,7 @@
       "All Technology"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -2691,7 +2660,7 @@
       "All Technology"
     ],
     "topics": [
-      "Digital Maturity"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2708,7 +2677,7 @@
       "All Technology"
     ],
     "topics": [
-      "Digital Engineering"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2725,7 +2694,7 @@
       "All Technology"
     ],
     "topics": [
-      "Product Engineering"
+      "Product"
     ],
     "tags": []
   },
@@ -2742,7 +2711,7 @@
       "All Technology"
     ],
     "topics": [
-      "App Modernization"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2759,7 +2728,7 @@
       "All Technology"
     ],
     "topics": [
-      "Digital Experience and UX"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2776,7 +2745,7 @@
       "IT Support and Management"
     ],
     "topics": [
-      "Cloud Migration"
+      "Cloud"
     ],
     "tags": []
   },
@@ -2793,7 +2762,7 @@
       "Software Development"
     ],
     "topics": [
-      "App Modernization"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -2810,7 +2779,7 @@
       "Logistics"
     ],
     "topics": [
-      "Food Delivery",
+      "Food-and-Beverage",
       "Retail"
     ],
     "tags": []
@@ -2828,7 +2797,7 @@
       "Logistics"
     ],
     "topics": [
-      "Food Delivery"
+      "Food-and-Beverage"
     ],
     "tags": []
   },
@@ -2842,10 +2811,10 @@
     "person": "",
     "organization": "Ubiquity",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Compliance and Corporate Governance"
+      "Risk-Compliance"
     ],
     "tags": []
   },
@@ -2894,8 +2863,8 @@
     "organization": "33 Across",
     "industry": [],
     "topics": [
-      "Live Sports",
-      "Sports Marketing"
+      "Media",
+      "Sports-Marketing"
     ],
     "tags": []
   },
@@ -2930,7 +2899,7 @@
     ],
     "topics": [
       "Cookieless",
-      "Advertising Measurement"
+      "Advertising"
     ],
     "tags": []
   },
@@ -2945,10 +2914,10 @@
     "organization": "33 Across",
     "industry": [
       "Adtech",
-      "Retail Chain"
+      "Retail-Chain"
     ],
     "topics": [
-      "Retail Media",
+      "Retail-Media",
       "Retail"
     ],
     "tags": []
@@ -2964,10 +2933,10 @@
     "organization": "33 Across",
     "industry": [
       "Adtech",
-      "Retail Chain"
+      "Retail-Chain"
     ],
     "topics": [
-      "Retail Media",
+      "Retail-Media",
       "Retail"
     ],
     "tags": []
@@ -2983,28 +2952,27 @@
     "organization": "33 Across",
     "industry": [
       "Adtech",
-      "**Business Category**: Marketing, Advertising, and Communications"
+      "**Business-Category**:-Marketing,-Advertising,-and-Communications"
     ],
     "topics": [
-      "Ad curation"
+      "Advertising"
     ],
     "tags": []
   },
   {
-    "id": "the-future-is-here-33-across-2023-12-28s-w2lyt4",
-    "title": "The Future is Here",
+    "id": "third-party-cookies-the-future-is-here-33-across-2023-12-28s-a7uiyn",
+    "title": "Third-party Cookies, the Future is Here",
     "url": "https://streetfightmag.com/2023/12/28/third-party-cookies-the-future-is-here/",
     "published": "2023-12-28s:",
     "contentType": "Byline",
-    "publication": "Street Fight",
+    "publication": "Street Fight Mag",
     "person": "",
     "organization": "33 Across",
     "industry": [
       "Adtech"
     ],
     "topics": [
-      "Cookieless",
-      "Advertising Measurement"
+      "Cookieless"
     ],
     "tags": []
   },
@@ -3055,7 +3023,7 @@
       "Adtech"
     ],
     "topics": [
-      "Traffic Shaping"
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -3100,8 +3068,7 @@
     "organization": "Infinity Loop",
     "industry": [],
     "topics": [
-      "Contract Negotiation",
-      "Contract Renewals",
+      "Contracts",
       "Procurement"
     ],
     "tags": []
@@ -3117,9 +3084,8 @@
     "organization": "Infinity Loop",
     "industry": [],
     "topics": [
-      "AI in Consulting",
-      "Contract Negotiation",
-      "Contract Renewals"
+      "AI",
+      "Contracts"
     ],
     "tags": []
   },
@@ -3134,7 +3100,7 @@
     "organization": "Infinity Loop",
     "industry": [],
     "topics": [
-      "Contract Negotiation",
+      "Contracts",
       "Procurement"
     ],
     "tags": []
@@ -3152,8 +3118,8 @@
       "Procurement"
     ],
     "topics": [
-      "Contract Negotiation",
-      "Cost Savings"
+      "Contracts",
+      "Cost-Savings"
     ],
     "tags": []
   },
@@ -3168,8 +3134,7 @@
     "organization": "Infinity Loop",
     "industry": [],
     "topics": [
-      "Contract Negotiation",
-      "Contract Renewals"
+      "Contracts"
     ],
     "tags": []
   },
@@ -3199,7 +3164,7 @@
     "organization": "Infinity Loop",
     "industry": [],
     "topics": [
-      "Contract Negotiation",
+      "Contracts",
       "Procurement"
     ],
     "tags": []
@@ -3214,10 +3179,10 @@
     "person": "",
     "organization": "Northern Trust",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Change Management"
+      "Change-Management"
     ],
     "tags": []
   },
@@ -3232,8 +3197,7 @@
     "organization": "Northern Trust",
     "industry": [],
     "topics": [
-      "Servant Leadership",
-      "Managing People"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -3247,10 +3211,10 @@
     "person": "",
     "organization": "Northern Trust",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Running a Business"
+      "Company-Building"
     ],
     "tags": []
   },
@@ -3264,11 +3228,10 @@
     "person": "",
     "organization": "Northern Trust",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Asset Management",
-      "Wealth Management"
+      "Finance"
     ],
     "tags": []
   },
@@ -3283,8 +3246,7 @@
     "organization": "Northern Trust",
     "industry": [],
     "topics": [
-      "Asset Management",
-      "Wealth Management"
+      "Finance"
     ],
     "tags": []
   },
@@ -3298,10 +3260,10 @@
     "person": "",
     "organization": "UST",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -3331,223 +3293,10 @@
     "person": "",
     "organization": "Northern Trust",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Employee Experience"
-    ],
-    "tags": []
-  },
-  {
-    "id": "e-s-insurance-insider-sagesure-2025-11-12s-j1v9d3",
-    "title": "E&S Insurance Insider",
-    "url": "https://www.linkedin.com/posts/terrencemclean_i-recently-spoke-with-adam-kovac-for-insurance-activity-7392580026455449600-b8JK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-11-12s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "SageSure",
-    "industry": [],
-    "topics": [
-      "Natural Disaster Insurance",
-      "Home Insurance"
-    ],
-    "tags": []
-  },
-  {
-    "id": "seawall-re-sagesure-2025-08-05s-xahe3r",
-    "title": "Seawall Re",
-    "url": "https://www.linkedin.com/posts/terrencemclean_seawall-re-first-in-a-series-of-transactions-activity-7356024872604450816-teRV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-08-05s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "SageSure",
-    "industry": [
-      "Insurance"
-    ],
-    "topics": [
-      "Sidecar Transaction"
-    ],
-    "tags": []
-  },
-  {
-    "id": "swiss-re-sagesure-2025-08-11s-l3bhfx",
-    "title": "Swiss Re",
-    "url": "https://www.linkedin.com/posts/terrencemclean_global-insured-losses-from-natural-disasters-activity-7360805777827065856-c-MG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-08-11s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "SageSure",
-    "industry": [
-      "Insurance"
-    ],
-    "topics": [
-      "Natural Disaster Insurance"
-    ],
-    "tags": []
-  },
-  {
-    "id": "terry-mclean-underwriter-of-the-year-sagesure-2025-09-29s-vr8r34",
-    "title": "Terry McLean - Underwriter of the Year",
-    "url": "https://www.linkedin.com/posts/terrencemclean_we-are-honored-to-be-named-the-insurance-activity-7378502847778406400-M840?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-09-29s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "SageSure",
-    "industry": [],
-    "topics": [
-      "Natural Disaster Insurance",
-      "Insurance Underwriting"
-    ],
-    "tags": []
-  },
-  {
-    "id": "us-news-and-world-report-sagesure-2025-08-13s-b6j3g5",
-    "title": "US News and World Report",
-    "url": "https://www.linkedin.com/posts/terrencemclean_homeinsurance-homeaffordability-insurance-activity-7362107633803116544-8qHG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-08-13s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "SageSure",
-    "industry": [
-      "Insurance"
-    ],
-    "topics": [
-      "Home Insurance"
-    ],
-    "tags": []
-  },
-  {
-    "id": "windstorm-sagesure-2025-11-18s-z07jvq",
-    "title": "Windstorm",
-    "url": "https://www.linkedin.com/posts/terrencemclean_what-is-windstorm-insurance-activity-7394401395472228352-2w7E?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-11-18s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "SageSure",
-    "industry": [],
-    "topics": [
-      "Natural Disaster Insurance",
-      "Climate Risk"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-authority-magazine-sleep-ai-2025-12-16s-x65dep",
-    "title": "Colin Lawlor - Authority Magazine",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-activity-7411482120558297088-cr4x?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-12-16s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech"
-    ],
-    "topics": [
-      "Sleep Health",
-      "Sleep Tracking"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-bees-sleep-ai-2025-09-09s-c5x9b5",
-    "title": "Colin Lawlor - Bees",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-aimodels-memory-activity-7369425279879946241-_i0_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-09-09s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech"
-    ],
-    "topics": [
-      "Sleep Tracking",
-      "Sleep Apnea",
-      "Sleep Disorders",
-      "Sleep Health"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-fortune-performance-post-sleep-ai-2025-08-28s-wqvsf5",
-    "title": "Colin Lawlor - Fortune Performance post",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-executiveperformance-sleepai-activity-7366807187647569920-Wgl-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAGCqBcB1H1jvSpZQA6gWaStSdE7BJcAUAY",
-    "published": "2025-08-28s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech",
-      "SaaS Company"
-    ],
-    "topics": [
-      "Sleep Tracking",
-      "Sleep Health"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-funding-announcement-sleep-ai-2025-08-26s-ob4lq2",
-    "title": "Colin Lawlor - Funding announcement",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-sleeptech-awaketotheopportunity-activity-7366096307012235264-KdsF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAGCqBcB1H1jvSpZQA6gWaStSdE7BJcAUAY",
-    "published": "2025-08-26s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech",
-      "Specialty Health Provider"
-    ],
-    "topics": [
-      "Sleep Tracking",
-      "Sleep Health"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-heading-on-the-road-sleep-ai-2025-09-15s-xhqmie",
-    "title": "Colin Lawlor - Heading on The Road",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-sleepai-activity-7369746305910341640-QWXE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-09-15s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech"
-    ],
-    "topics": [
-      "Sleep Tracking",
-      "Sleep Apnea",
-      "Sleep Disorders",
-      "Sleep Health"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-heimtextil-sleep-ai-2026-01-16s-gdigrl",
-    "title": "Colin Lawlor - Heimtextil",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_the-sheer-volume-of-sleep-innovation-happening-activity-7417967375716761600-QZXw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2026-01-16s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech"
-    ],
-    "topics": [
-      "Sleep Tracking",
-      "Sleep Health"
+      "Workforce"
     ],
     "tags": []
   },
@@ -3564,8 +3313,210 @@
       "Healthtech"
     ],
     "topics": [
-      "Sleep Tracking",
-      "Sleep Health"
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "seawall-re-sagesure-2025-08-05s-xahe3r",
+    "title": "Seawall Re",
+    "url": "https://www.linkedin.com/posts/terrencemclean_seawall-re-first-in-a-series-of-transactions-activity-7356024872604450816-teRV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-08-05s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "SageSure",
+    "industry": [
+      "Insurance"
+    ],
+    "topics": [
+      "Finance"
+    ],
+    "tags": []
+  },
+  {
+    "id": "swiss-re-sagesure-2025-08-11s-l3bhfx",
+    "title": "Swiss Re",
+    "url": "https://www.linkedin.com/posts/terrencemclean_global-insured-losses-from-natural-disasters-activity-7360805777827065856-c-MG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-08-11s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "SageSure",
+    "industry": [
+      "Insurance"
+    ],
+    "topics": [
+      "Insurance"
+    ],
+    "tags": []
+  },
+  {
+    "id": "terry-mclean-underwriter-of-the-year-sagesure-2025-09-29s-vr8r34",
+    "title": "Terry McLean - Underwriter of the Year",
+    "url": "https://www.linkedin.com/posts/terrencemclean_we-are-honored-to-be-named-the-insurance-activity-7378502847778406400-M840?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-09-29s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "SageSure",
+    "industry": [],
+    "topics": [
+      "Insurance"
+    ],
+    "tags": []
+  },
+  {
+    "id": "us-news-and-world-report-sagesure-2025-08-13s-b6j3g5",
+    "title": "US News and World Report",
+    "url": "https://www.linkedin.com/posts/terrencemclean_homeinsurance-homeaffordability-insurance-activity-7362107633803116544-8qHG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-08-13s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "SageSure",
+    "industry": [
+      "Insurance"
+    ],
+    "topics": [
+      "Insurance"
+    ],
+    "tags": []
+  },
+  {
+    "id": "windstorm-sagesure-2025-11-18s-z07jvq",
+    "title": "Windstorm",
+    "url": "https://www.linkedin.com/posts/terrencemclean_what-is-windstorm-insurance-activity-7394401395472228352-2w7E?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-11-18s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "SageSure",
+    "industry": [],
+    "topics": [
+      "Insurance",
+      "Sustainability"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-authority-magazine-sleep-ai-2025-12-16s-x65dep",
+    "title": "Colin Lawlor - Authority Magazine",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-activity-7411482120558297088-cr4x?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-12-16s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech"
+    ],
+    "topics": [
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-bees-sleep-ai-2025-09-09s-c5x9b5",
+    "title": "Colin Lawlor - Bees",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-aimodels-memory-activity-7369425279879946241-_i0_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-09-09s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech"
+    ],
+    "topics": [
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-fortune-performance-post-sleep-ai-2025-08-28s-wqvsf5",
+    "title": "Colin Lawlor - Fortune Performance post",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-executiveperformance-sleepai-activity-7366807187647569920-Wgl-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAGCqBcB1H1jvSpZQA6gWaStSdE7BJcAUAY",
+    "published": "2025-08-28s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech",
+      "SaaS-Company"
+    ],
+    "topics": [
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-funding-announcement-sleep-ai-2025-08-26s-ob4lq2",
+    "title": "Colin Lawlor - Funding announcement",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-sleeptech-awaketotheopportunity-activity-7366096307012235264-KdsF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAGCqBcB1H1jvSpZQA6gWaStSdE7BJcAUAY",
+    "published": "2025-08-26s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech",
+      "Specialty-Health-Provider"
+    ],
+    "topics": [
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-heading-on-the-road-sleep-ai-2025-09-15s-xhqmie",
+    "title": "Colin Lawlor - Heading on The Road",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-sleepai-activity-7369746305910341640-QWXE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-09-15s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech"
+    ],
+    "topics": [
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-heimtextil-sleep-ai-2026-01-16s-gdigrl",
+    "title": "Colin Lawlor - Heimtextil",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_the-sheer-volume-of-sleep-innovation-happening-activity-7417967375716761600-QZXw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2026-01-16s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech"
+    ],
+    "topics": [
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-mckinsey-study-sleep-ai-2025-11-21s-k4mghy",
+    "title": "Colin Lawlor - McKinsey Study",
+    "url": "https://www.linkedin.com/posts/terrencemclean_i-recently-spoke-with-adam-kovac-for-insurance-activity-7392580026455449600-b8JK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-11-21s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech"
+    ],
+    "topics": [
+      "Sleep"
     ],
     "tags": []
   },
@@ -3582,68 +3533,7 @@
       "Healthtech"
     ],
     "topics": [
-      "Sleep Tracking",
-      "Sleep Apnea",
-      "Sleep Disorders",
-      "Sleep Health"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-sleep-data-study-sleep-ai-2025-09-25s-4fn10",
-    "title": "Colin Lawlor - Sleep Data Study",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_our-mission-is-simple-democratizing-access-activity-7376970545386614784-khEZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-09-25s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech"
-    ],
-    "topics": [
-      "Sleep Tracking",
-      "Sleep Disorders",
-      "Sleep Apnea",
-      "Sleep Health"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-sleep-drinks-sleep-ai-2026-01-14s-jmjs5w",
-    "title": "Colin Lawlor - Sleep Drinks",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_the-booming-business-in-drinking-yourself-activity-7416516881332858880-lN3n?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2026-01-14s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech"
-    ],
-    "topics": [
-      "Sleep Health",
-      "Sleep Disorders"
-    ],
-    "tags": []
-  },
-  {
-    "id": "colin-lawlor-sleep-epochs-sleep-ai-2025-09-02s-pay3pf",
-    "title": "Colin Lawlor - Sleep Epochs",
-    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-sleeptracking-sleepai-activity-7368673114836058112-ECKS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-09-02s:",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIn",
-    "person": "",
-    "organization": "Sleep.aI",
-    "industry": [
-      "Healthtech"
-    ],
-    "topics": [
-      "Sleep Tracking",
-      "Sleep Apnea",
-      "Sleep Disorders",
-      "Sleep Health"
+      "Sleep"
     ],
     "tags": []
   },
@@ -3660,11 +3550,60 @@
       "Healthtech"
     ],
     "topics": [
-      "Sleep Tracking",
-      "Sleep Apnea",
-      "Sleep Disorders",
-      "Sleep Health",
-      "Executive Lifestyles"
+      "Sleep",
+      "Work-Culture"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-sleep-drinks-sleep-ai-2026-01-14s-jmjs5w",
+    "title": "Colin Lawlor - Sleep Drinks",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_the-booming-business-in-drinking-yourself-activity-7416516881332858880-lN3n?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2026-01-14s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech"
+    ],
+    "topics": [
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-sleep-epochs-sleep-ai-2025-09-02s-pay3pf",
+    "title": "Colin Lawlor - Sleep Epochs",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_sleephealth-sleeptracking-sleepai-activity-7368673114836058112-ECKS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-09-02s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech"
+    ],
+    "topics": [
+      "Sleep"
+    ],
+    "tags": []
+  },
+  {
+    "id": "colin-lawlor-sleep-health-on-the-road-sleep-ai-2025-09-23s-m9t92d",
+    "title": "Colin Lawlor - Sleep Health on the Road",
+    "url": "https://www.linkedin.com/posts/colinjlawlor_our-mission-is-simple-democratizing-access-activity-7376970545386614784-khEZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
+    "published": "2025-09-23s:",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIn",
+    "person": "",
+    "organization": "Sleep.aI",
+    "industry": [
+      "Healthtech"
+    ],
+    "topics": [
+      "Sleep",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -3681,9 +3620,7 @@
       "Healthtech"
     ],
     "topics": [
-      "Sleep Tracking",
-      "Sleep Apnea",
-      "Sleep Disorders"
+      "Sleep"
     ],
     "tags": []
   },
@@ -3698,11 +3635,11 @@
     "organization": "Sleep.aI",
     "industry": [
       "Healthtech",
-      "**Business Category**: Healthcare & Wellness"
+      "**Business-Category**:-Healthcare-&-Wellness"
     ],
     "topics": [
-      "Sleep Tracking",
-      "Pharmaceuticals and Biotech"
+      "Sleep",
+      "Healthcare"
     ],
     "tags": []
   },
@@ -3719,7 +3656,7 @@
       "- Advertising #business-subcategory - **Business Category**: Marketing, Advertising, and Communications #business-category"
     ],
     "topics": [
-      "AI In Advertising"
+      "AI"
     ],
     "tags": []
   },
@@ -3737,7 +3674,7 @@
     ],
     "topics": [
       "Automation",
-      "Marketing Automation"
+      "Marketing-Automation"
     ],
     "tags": []
   },
@@ -3752,9 +3689,8 @@
     "organization": "UpWave",
     "industry": [],
     "topics": [
-      "AI In Advertising",
-      "Generative AI",
-      "Digital Advertising"
+      "AI",
+      "Advertising"
     ],
     "tags": []
   },
@@ -3771,7 +3707,7 @@
       "Advertising"
     ],
     "topics": [
-      "Brand Building"
+      "Brand-Building"
     ],
     "tags": []
   },
@@ -3788,12 +3724,12 @@
       "Adtech"
     ],
     "topics": [
-      "Brand Building"
+      "Brand-Building"
     ],
     "tags": []
   },
   {
-    "id": "digging-deeper-into-advertising-s-lost-half-upwave-2023-10-16s-x4o5hj",
+    "id": "digging-deeper-into-advertising-s-lost-half-advertising-week-upwave-ikcl7c",
     "title": "Digging Deeper Into Advertising’s Lost Half",
     "url": "https://advertisingweek.com/digging-deeper-into-advertisings-lost-half/",
     "published": "2023-10-16s:",
@@ -3803,10 +3739,10 @@
     "organization": "UpWave",
     "industry": [
       "Adtech",
-      "Media Agency"
+      "Media-Agency"
     ],
     "topics": [
-      "Advertising Measurement"
+      "Advertising"
     ],
     "tags": []
   },
@@ -3823,8 +3759,8 @@
       "Advertising"
     ],
     "topics": [
-      "Live Sports",
-      "Advertising Measurement"
+      "Media",
+      "Advertising"
     ],
     "tags": []
   },
@@ -3841,8 +3777,8 @@
       "Adtech"
     ],
     "topics": [
-      "Streaming Media",
-      "Video Advertising"
+      "Media",
+      "Advertising"
     ],
     "tags": []
   },
@@ -3859,7 +3795,7 @@
       "Marketing"
     ],
     "topics": [
-      "Streaming Media"
+      "Media"
     ],
     "tags": []
   },
@@ -3874,10 +3810,10 @@
     "organization": "UpWave",
     "industry": [
       "Advertising",
-      "Media Agency"
+      "Media-Agency"
     ],
     "topics": [
-      "Advertising Measurement"
+      "Advertising"
     ],
     "tags": []
   },
@@ -3896,7 +3832,7 @@
     ],
     "topics": [
       "Automation",
-      "Machine Learning"
+      "AI"
     ],
     "tags": []
   },
@@ -3913,8 +3849,7 @@
       "Advertising"
     ],
     "topics": [
-      "Streaming Media",
-      "Linear TV"
+      "Media"
     ],
     "tags": []
   },
@@ -3948,7 +3883,7 @@
       "Advertising"
     ],
     "topics": [
-      "Advertising Signals"
+      "Advertising"
     ],
     "tags": []
   },
@@ -3998,8 +3933,8 @@
       "Adtech"
     ],
     "topics": [
-      "Brand Building",
-      "Marketing Funnel"
+      "Brand-Building",
+      "B2B-Marketing"
     ],
     "tags": []
   },
@@ -4013,11 +3948,11 @@
     "person": "",
     "organization": "UpWave",
     "industry": [
-      "Media Agency",
+      "Media-Agency",
       "Adtech"
     ],
     "topics": [
-      "Advertising Measurement"
+      "Advertising"
     ],
     "tags": []
   },
@@ -4034,7 +3969,7 @@
       "Advertising"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4048,10 +3983,10 @@
     "person": "",
     "organization": "UpWave",
     "industry": [
-      "Retail Chain"
+      "Retail-Chain"
     ],
     "topics": [
-      "Retail Media"
+      "Retail-Media"
     ],
     "tags": []
   },
@@ -4065,12 +4000,11 @@
     "person": "",
     "organization": "Bank of America",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
       "Benefits",
-      "Employee Experience",
-      "Employee Retention"
+      "Workforce"
     ],
     "tags": []
   },
@@ -4084,11 +4018,10 @@
     "person": "",
     "organization": "Deep Blue Cloud",
     "industry": [
-      "IT Support and Management"
+      "IT-Support-and-Management"
     ],
     "topics": [
-      "Workforce",
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -4102,10 +4035,10 @@
     "person": "",
     "organization": "Deep Blue Cloud",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Cloud Myths"
+      "Cloud"
     ],
     "tags": []
   },
@@ -4122,7 +4055,7 @@
       "Marketing"
     ],
     "topics": [
-      "Streaming Media"
+      "Media"
     ],
     "tags": []
   },
@@ -4136,11 +4069,11 @@
     "person": "",
     "organization": "M&C Saatchi Performance",
     "industry": [
-      "HR/Recruiting Firm",
+      "HR/Recruiting-Firm",
       "Adtech"
     ],
     "topics": [
-      "Mobile gaming"
+      "Mobile-gaming"
     ],
     "tags": []
   },
@@ -4157,7 +4090,7 @@
       "Advertising"
     ],
     "topics": [
-      "Streaming Media"
+      "Media"
     ],
     "tags": []
   },
@@ -4174,7 +4107,7 @@
       "Marketing"
     ],
     "topics": [
-      "Creative Intelligence"
+      "Creative-Intelligence"
     ],
     "tags": []
   },
@@ -4191,7 +4124,7 @@
       "Marketing"
     ],
     "topics": [
-      "Product Management"
+      "Product"
     ],
     "tags": []
   },
@@ -4206,10 +4139,10 @@
     "organization": "Moloco",
     "industry": [
       "Adtech",
-      "Retail Chain"
+      "Retail-Chain"
     ],
     "topics": [
-      "Retail Media",
+      "Retail-Media",
       "Retail"
     ],
     "tags": []
@@ -4227,7 +4160,7 @@
       "Insurance"
     ],
     "topics": [
-      "AI in Insurance"
+      "AI"
     ],
     "tags": []
   },
@@ -4244,7 +4177,7 @@
       "Insurance"
     ],
     "topics": [
-      "Machine Learning"
+      "AI"
     ],
     "tags": []
   },
@@ -4261,7 +4194,7 @@
       "Insurance"
     ],
     "topics": [
-      "Life Insurance"
+      "Insurance"
     ],
     "tags": []
   },
@@ -4275,11 +4208,11 @@
     "person": "",
     "organization": "Mylo",
     "industry": [
-      "Public Relations",
-      "HR/Recruiting Firm"
+      "Public-Relations",
+      "HR/Recruiting-Firm"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -4296,7 +4229,7 @@
       "Insurance"
     ],
     "topics": [
-      "Life Insurance"
+      "Insurance"
     ],
     "tags": []
   },
@@ -4313,7 +4246,6 @@
       "Advertising"
     ],
     "topics": [
-      "Live Sports",
       "Media"
     ],
     "tags": []
@@ -4331,7 +4263,7 @@
       "Advertising"
     ],
     "topics": [
-      "Change Management"
+      "Change-Management"
     ],
     "tags": []
   },
@@ -4349,8 +4281,8 @@
       "Marketing"
     ],
     "topics": [
-      "Media Mix Modelling",
-      "Local Advertising"
+      "Media",
+      "Advertising"
     ],
     "tags": []
   },
@@ -4367,7 +4299,7 @@
       "Advertising"
     ],
     "topics": [
-      "New Business Strategy"
+      "Company-Building"
     ],
     "tags": []
   },
@@ -4382,7 +4314,7 @@
     "organization": "NOVUS",
     "industry": [
       "Advertising",
-      "Media Agency"
+      "Media-Agency"
     ],
     "topics": [],
     "tags": []
@@ -4400,7 +4332,7 @@
       "Advertising"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -4417,8 +4349,8 @@
       "Advertising"
     ],
     "topics": [
-      "Agency Models",
-      "New Business Strategy"
+      "Agency-Models",
+      "Company-Building"
     ],
     "tags": []
   },
@@ -4433,12 +4365,12 @@
     "organization": "NOVUS",
     "industry": [
       "Advertising",
-      "Media Agency"
+      "Media-Agency"
     ],
     "topics": [
-      "Agency Models",
-      "Creative Agency",
-      "Media Mix Modelling"
+      "Agency-Models",
+      "Creative-Agency",
+      "Media"
     ],
     "tags": []
   },
@@ -4455,8 +4387,8 @@
       "Advertising"
     ],
     "topics": [
-      "Remote Work",
-      "Work-Life Balance"
+      "Workforce",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -4473,12 +4405,12 @@
       "Advertising"
     ],
     "topics": [
-      "Local Advertising"
+      "Advertising"
     ],
     "tags": []
   },
   {
-    "id": "a-master-thesis-unpacking-the-definition-of-attention-as-a-metric-real-rkzatw",
+    "id": "a-master-thesis-unpacking-the-definition-of-attention-as-a-metric-real-reanex",
     "title": "A Master Thesis- Unpacking the Definition of 'Attention as a Metric'",
     "url": "https://blog.realeyesit.com/a-master-thesis-unpacking-the-definition-of-attention-as-a-metric",
     "published": "2023-05-05s:",
@@ -4490,13 +4422,13 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
   {
     "id": "a-master-thesis-unpacking-the-definition-of-attention-as-a-metric-real-reanex",
-    "title": "A Master Thesis- Unpacking the Definition of ‘Attention as a Metric’",
+    "title": "A Master Thesis- Unpacking the Definition of 'Attention as a Metric'",
     "url": "https://blog.realeyesit.com/a-master-thesis-unpacking-the-definition-of-attention-as-a-metric",
     "published": "2023-05-05s:",
     "contentType": "Interview",
@@ -4507,7 +4439,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4524,7 +4456,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4541,7 +4473,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4558,7 +4490,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4575,7 +4507,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4592,7 +4524,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4609,7 +4541,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4626,7 +4558,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4643,8 +4575,8 @@
       "Adtech"
     ],
     "topics": [
-      "B2B Marketing",
-      "Attention Measurement"
+      "B2B-Marketing",
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4661,7 +4593,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4678,7 +4610,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4695,7 +4627,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4712,7 +4644,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4729,7 +4661,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4746,7 +4678,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4763,7 +4695,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4780,7 +4712,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4797,7 +4729,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4814,7 +4746,7 @@
       "Advertising"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4831,7 +4763,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4848,7 +4780,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4865,7 +4797,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4880,8 +4812,8 @@
     "organization": "Realeyes",
     "industry": [],
     "topics": [
-      "Attention Measurement",
-      "Creators"
+      "Attention-Measurement",
+      "Content-Strategy"
     ],
     "tags": []
   },
@@ -4898,8 +4830,8 @@
       "Marketing"
     ],
     "topics": [
-      "Attention Measurement",
-      "Data and Analytics"
+      "Attention-Measurement",
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -4916,7 +4848,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4933,8 +4865,8 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement",
-      "Customer Experience"
+      "Attention-Measurement",
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -4951,8 +4883,8 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement",
-      "Creative Intelligence"
+      "Attention-Measurement",
+      "Creative-Intelligence"
     ],
     "tags": []
   },
@@ -4969,7 +4901,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -4986,7 +4918,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5004,7 +4936,7 @@
     ],
     "topics": [
       "CPG",
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5021,7 +4953,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5038,7 +4970,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5055,8 +4987,8 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement",
-      "Company Building"
+      "Attention-Measurement",
+      "Company-Building"
     ],
     "tags": []
   },
@@ -5073,8 +5005,8 @@
       "Marketing"
     ],
     "topics": [
-      "Attention Measurement",
-      "Video Advertising"
+      "Attention-Measurement",
+      "Advertising"
     ],
     "tags": []
   },
@@ -5091,7 +5023,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5108,7 +5040,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5125,7 +5057,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5142,9 +5074,8 @@
       "Marketing"
     ],
     "topics": [
-      "Data and Analytics",
-      "Super Bowl",
-      "Attention Measurement"
+      "Data-Analytics",
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5161,7 +5092,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5178,7 +5109,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5195,7 +5126,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5212,7 +5143,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5229,7 +5160,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5246,7 +5177,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5263,7 +5194,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5281,7 +5212,7 @@
     ],
     "topics": [
       "Finance",
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5298,7 +5229,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5315,7 +5246,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5332,8 +5263,8 @@
       "Adtech"
     ],
     "topics": [
-      "Generative AI",
-      "Attention Measurement"
+      "AI",
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5350,7 +5281,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5367,7 +5298,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5384,7 +5315,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5401,8 +5332,8 @@
       "Marketing"
     ],
     "topics": [
-      "Attention Measurement",
-      "Data and Analytics"
+      "Attention-Measurement",
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -5419,7 +5350,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5436,7 +5367,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5453,7 +5384,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5470,7 +5401,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5487,7 +5418,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5504,7 +5435,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5521,7 +5452,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5538,8 +5469,8 @@
       "Adtech"
     ],
     "topics": [
-      "Generative AI",
-      "Attention Measurement"
+      "AI",
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5556,7 +5487,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5573,7 +5504,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5590,7 +5521,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5607,7 +5538,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5624,7 +5555,7 @@
       "- CPG #business-subcategory - Advertising #business-subcategory"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5641,7 +5572,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5658,7 +5589,7 @@
       "Adtech"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5675,9 +5606,8 @@
       "Adtech"
     ],
     "topics": [
-      "World Cup",
-      "Attention Measurement",
-      "Customer Experience"
+      "Attention-Measurement",
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -5691,7 +5621,7 @@
     "person": "",
     "organization": "Team8",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
       "Finance"
@@ -5712,8 +5642,8 @@
       "Adtech"
     ],
     "topics": [
-      "B2B Marketing",
-      "Organizational Culture"
+      "B2B-Marketing",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -5730,7 +5660,7 @@
       "Marketing"
     ],
     "topics": [
-      "Company Building"
+      "Company-Building"
     ],
     "tags": []
   },
@@ -5748,7 +5678,7 @@
       "Adtech"
     ],
     "topics": [
-      "B2B Marketing"
+      "B2B-Marketing"
     ],
     "tags": []
   },
@@ -5765,7 +5695,7 @@
       "Marketing"
     ],
     "topics": [
-      "B2B Marketing",
+      "B2B-Marketing",
       "Procurement"
     ],
     "tags": []
@@ -5783,7 +5713,7 @@
       "Insurance"
     ],
     "topics": [
-      "Attention Measurement"
+      "Attention-Measurement"
     ],
     "tags": []
   },
@@ -5797,11 +5727,11 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Generative AI",
-      "Space Exploration"
+      "AI",
+      "Technology"
     ],
     "tags": []
   },
@@ -5818,7 +5748,7 @@
       "Education"
     ],
     "topics": [
-      "AI in Education"
+      "AI"
     ],
     "tags": []
   },
@@ -5832,11 +5762,11 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Responsible AI",
-      "Security and Infrastructure"
+      "AI",
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -5853,7 +5783,7 @@
       "All Technology"
     ],
     "topics": [
-      "Higher Education"
+      "Education"
     ],
     "tags": []
   },
@@ -5867,11 +5797,11 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Higher Education",
-      "African History"
+      "Education",
+      "African-History"
     ],
     "tags": []
   },
@@ -5885,7 +5815,7 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [],
     "tags": []
@@ -5900,7 +5830,7 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [],
     "tags": []
@@ -5916,14 +5846,12 @@
     "organization": "Google DeepMind",
     "industry": [],
     "topics": [
-      "AI Agents",
-      "AI Orchestration",
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
   {
-    "id": "lila-experience-ai-expansion-google-deepmind-2023-11-16s-40wy80",
+    "id": "sam-hello-world-google-deepmind-2023-11-01s-k5u9q0",
     "title": "Lila- Experience AI Expansion",
     "url": "https://www.linkedin.com/posts/suzan-sam-miller-b936b03_experience-ai-article-activity-7125511942022017024-ZBj7/?utm_source=share&utm_medium=member_desktop",
     "published": "2023-11-16s:",
@@ -5932,26 +5860,24 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [],
     "tags": []
   },
   {
     "id": "sam-hello-world-google-deepmind-2023-11-01s-k5u9q0",
-    "title": "Sam - Hello World",
+    "title": "Lila- Experience AI Expansion",
     "url": "https://www.linkedin.com/posts/suzan-sam-miller-b936b03_experience-ai-article-activity-7125511942022017024-ZBj7/?utm_source=share&utm_medium=member_desktop",
-    "published": "2023-11-01s:",
+    "published": "2023-11-16s:",
     "contentType": "LinkedIn post",
     "publication": "LinkedIn",
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "Artificial Intelligence"
+      "All-Tech"
     ],
-    "topics": [
-      "AI in Education"
-    ],
+    "topics": [],
     "tags": []
   },
   {
@@ -5964,11 +5890,11 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Higher Education",
-      "African History"
+      "Education",
+      "African-History"
     ],
     "tags": []
   },
@@ -5982,11 +5908,9 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "Artificial Intelligence"
+      "Artificial-Intelligence"
     ],
-    "topics": [
-      "Total Emphasis"
-    ],
+    "topics": [],
     "tags": []
   },
   {
@@ -5999,10 +5923,10 @@
     "person": "",
     "organization": "Google DeepMind",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "AI in Education"
+      "AI"
     ],
     "tags": []
   },
@@ -6016,11 +5940,11 @@
     "person": "",
     "organization": "Google",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
       "Automation",
-      "Machine Learning"
+      "AI"
     ],
     "tags": []
   },
@@ -6034,11 +5958,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Cloud Spend",
-      "Cloud Migration"
+      "Cloud"
     ],
     "tags": []
   },
@@ -6055,7 +5978,7 @@
       "All Technology"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -6069,10 +5992,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Cloud Infrastructure"
+      "Cloud"
     ],
     "tags": []
   },
@@ -6086,10 +6009,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6103,12 +6026,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Customer Experience",
-      "Customer Retention",
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6122,13 +6043,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Experience",
-      "Customer Service",
-      "Customer Retention",
-      "Customer Satisfaction"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6142,11 +6060,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Experience",
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6160,10 +6077,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6177,10 +6094,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6194,10 +6111,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6211,10 +6128,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Recruitment and Layoffs",
+      "Workforce",
       "Procurement"
     ],
     "tags": []
@@ -6229,11 +6146,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Service",
-      "Customer Retention"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6247,11 +6163,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "IT Support and Management"
+      "IT-Support-and-Management"
     ],
     "topics": [
-      "App Modernization",
-      "Maintenance Strategy"
+      "Digital-Transformation",
+      "Maintenance-Strategy"
     ],
     "tags": []
   },
@@ -6265,10 +6181,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -6282,11 +6198,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Employee Experience",
-      "Organizational Culture"
+      "Workforce",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -6300,10 +6216,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Organizational Culture"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -6320,7 +6236,7 @@
       "Adtech"
     ],
     "topics": [
-      "Marketing Automation"
+      "Marketing-Automation"
     ],
     "tags": []
   },
@@ -6334,10 +6250,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Telecommunications Strategy"
+      "Cloud"
     ],
     "tags": []
   },
@@ -6351,10 +6267,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Compliance and Corporate Governance"
+      "Risk-Compliance"
     ],
     "tags": []
   },
@@ -6368,11 +6284,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Incident Management",
-      "Maintenance Strategy"
+      "Security-and-Infrastructure",
+      "Maintenance-Strategy"
     ],
     "tags": []
   },
@@ -6386,7 +6302,7 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
       "Retail"
@@ -6403,13 +6319,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Training and Development",
-      "Employee Experience",
-      "Generative AI",
-      "Workforce"
+      "Workforce",
+      "AI"
     ],
     "tags": []
   },
@@ -6423,7 +6337,7 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
       "Retail"
@@ -6440,10 +6354,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Organizational Culture"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -6457,10 +6371,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "Cybersecurity Firm"
+      "Cybersecurity-Firm"
     ],
     "topics": [
-      "Security and Infrastructure"
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -6477,7 +6391,7 @@
       "Telecommunications"
     ],
     "topics": [
-      "B2B Marketing"
+      "B2B-Marketing"
     ],
     "tags": []
   },
@@ -6491,14 +6405,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Data and Analytics",
-      "Customer Experience",
-      "Customer Service",
-      "Customer Retention",
-      "Customer Satisfaction"
+      "Data-Analytics",
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6512,11 +6423,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "IT Support and Management"
+      "IT-Support-and-Management"
     ],
     "topics": [
-      "Cost Savings",
-      "Maintenance Strategy"
+      "Cost-Savings",
+      "Maintenance-Strategy"
     ],
     "tags": []
   },
@@ -6530,11 +6441,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Energy Efficiency",
-      "Generative AI"
+      "Sustainability",
+      "AI"
     ],
     "tags": []
   },
@@ -6548,10 +6459,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6565,10 +6476,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Experience"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6582,12 +6493,12 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Cloud Migration",
-      "Machine Learning",
-      "Digital Maturity"
+      "Cloud",
+      "AI",
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -6601,12 +6512,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Workforce",
-      "Training and Development",
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -6620,10 +6529,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -6637,10 +6546,9 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
-      "Investment Banking",
       "Finance"
     ],
     "tags": []
@@ -6655,7 +6563,7 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [],
     "tags": []
@@ -6673,7 +6581,7 @@
       "Insurance"
     ],
     "topics": [
-      "AI in Insurance"
+      "AI"
     ],
     "tags": []
   },
@@ -6690,7 +6598,7 @@
       "Telecommunications"
     ],
     "topics": [
-      "Telecommunications Strategy"
+      "Cloud"
     ],
     "tags": []
   },
@@ -6704,10 +6612,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Business Analytics"
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -6721,10 +6629,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Chaos Engineering"
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -6738,10 +6646,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Retention"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6755,11 +6663,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Retention",
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -6773,10 +6680,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Dependency Mapping"
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -6790,10 +6697,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Digital Experience and UX"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -6807,10 +6714,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Organizational Culture"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -6824,10 +6731,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -6841,10 +6748,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Fleet Maintenance"
+      "Fleet"
     ],
     "tags": []
   },
@@ -6858,11 +6765,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "Cybersecurity Firm"
+      "Cybersecurity-Firm"
     ],
     "topics": [
       "Automation",
-      "Security and Infrastructure"
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -6876,10 +6783,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "IT Support and Management"
+      "IT-Support-and-Management"
     ],
     "topics": [
-      "Business Analytics"
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -6893,11 +6800,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Maintenance Strategy",
-      "Incident Management"
+      "Maintenance-Strategy",
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -6911,10 +6818,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Maintenance Strategy"
+      "Maintenance-Strategy"
     ],
     "tags": []
   },
@@ -6928,10 +6835,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Maintenance Strategy"
+      "Maintenance-Strategy"
     ],
     "tags": []
   },
@@ -6945,7 +6852,7 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [],
     "tags": []
@@ -6960,11 +6867,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Maintenance Strategy",
-      "Problem Management"
+      "Maintenance-Strategy",
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -6978,10 +6885,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "IT Support and Management"
+      "IT-Support-and-Management"
     ],
     "topics": [
-      "Maintenance Strategy"
+      "Maintenance-Strategy"
     ],
     "tags": []
   },
@@ -6995,10 +6902,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Data Visibility"
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -7012,10 +6919,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "Public Affairs"
+      "Public-Affairs"
     ],
     "topics": [
-      "Smart Cities"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -7029,10 +6936,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -7049,7 +6956,7 @@
       "All Technology"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -7063,10 +6970,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Website Monitoring"
+      "Security-and-Infrastructure"
     ],
     "tags": []
   },
@@ -7083,7 +6990,7 @@
       "Logistics"
     ],
     "topics": [
-      "Transportation and Logistics"
+      "Fleet"
     ],
     "tags": []
   },
@@ -7097,11 +7004,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Process Automation",
-      "Business Transformation"
+      "Automation",
+      "Business-Transformation"
     ],
     "tags": []
   },
@@ -7115,11 +7022,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Business Transformation",
-      "Organizational Culture"
+      "Business-Transformation",
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -7133,10 +7040,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Service"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -7150,10 +7057,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Business Analytics"
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -7168,11 +7075,10 @@
     "organization": "IBM",
     "industry": [
       "CPG",
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Service",
-      "Customer Satisfaction"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -7186,11 +7092,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Customer Service",
-      "Customer Experience"
+      "Customer-Experience"
     ],
     "tags": []
   },
@@ -7204,7 +7109,7 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "Financial Services"
+      "Financial-Services"
     ],
     "topics": [
       "Automation"
@@ -7221,10 +7126,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Marketing Automation",
+      "Marketing-Automation",
       "Automation"
     ],
     "tags": []
@@ -7239,7 +7144,7 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
       "Workforce"
@@ -7256,11 +7161,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "People Analytics",
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -7274,10 +7178,10 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "Workflow Optimization"
+      "Automation"
     ],
     "tags": []
   },
@@ -7291,7 +7195,7 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
       "Automation"
@@ -7308,11 +7212,11 @@
     "person": "",
     "organization": "IBM",
     "industry": [
-      "All Tech",
-      "IT Support and Management"
+      "All-Tech",
+      "IT-Support-and-Management"
     ],
     "topics": [
-      "Digital Maturity"
+      "Digital-Transformation"
     ],
     "tags": []
   },
@@ -7326,10 +7230,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Drug Development"
+      "Healthcare"
     ],
     "tags": []
   },
@@ -7344,12 +7248,12 @@
     "organization": "Sodexo",
     "industry": [],
     "topics": [
-      "Food Service"
+      "Food-and-Beverage"
     ],
     "tags": []
   },
   {
-    "id": "david-woodbury-awards-sodexo-2025-09-02s-n5f9xk",
+    "id": "david-woodbury-spirit-of-sodexo-sodexo-2025-09-09s-j7i75s",
     "title": "David Woodbury - Awards",
     "url": "https://www.linkedin.com/posts/activity-7373450827547590656-bKbG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
     "published": "2025-09-02s:",
@@ -7358,10 +7262,10 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
-      "Employee Experience"
+      "Workforce"
     ],
     "tags": []
   },
@@ -7388,12 +7292,12 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
-      "Food and Beverage and QSR",
-      "Customer Retention",
-      "Employee Experience"
+      "Food-and-Beverage",
+      "Customer-Experience",
+      "Workforce"
     ],
     "tags": []
   },
@@ -7421,7 +7325,7 @@
     "organization": "Sodexo",
     "industry": [],
     "topics": [
-      "Event Marketing"
+      "Travel"
     ],
     "tags": []
   },
@@ -7435,11 +7339,11 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
-      "Food Service",
-      "Food Waste"
+      "Food-and-Beverage",
+      "Sustainability"
     ],
     "tags": []
   },
@@ -7454,7 +7358,7 @@
     "organization": "Sodexo",
     "industry": [],
     "topics": [
-      "Servant Leadership",
+      "Work-Culture",
       "Leadership"
     ],
     "tags": []
@@ -7470,8 +7374,8 @@
     "organization": "Sodexo",
     "industry": [],
     "topics": [
-      "Learning and Growth",
-      "Product-led Growth"
+      "Education",
+      "Product"
     ],
     "tags": []
   },
@@ -7485,10 +7389,10 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
-      "Hospitality and Tourism"
+      "Travel"
     ],
     "tags": []
   },
@@ -7508,7 +7412,7 @@
     "tags": []
   },
   {
-    "id": "david-woodbury-man-on-the-moon-sodexo-2025-09-25s-p0ounr",
+    "id": "david-woodbury-serving-b2b-customers-sodexo-2025-09-17s-yxp73z",
     "title": "David Woodbury - Man on the Moon",
     "url": "https://www.linkedin.com/posts/activity-7376243776610258944-yMGn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
     "published": "2025-09-25s:",
@@ -7517,7 +7421,7 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
       "Work-Culture"
@@ -7534,10 +7438,10 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
-      "Food and Beverage and QSR"
+      "Food-and-Beverage"
     ],
     "tags": []
   },
@@ -7566,7 +7470,7 @@
     "industry": [],
     "topics": [
       "Leadership",
-      "Organizational Culture"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -7581,45 +7485,41 @@
     "organization": "Sodexo",
     "industry": [],
     "topics": [
-      "Event Marketing"
+      "Travel"
     ],
     "tags": []
   },
   {
     "id": "david-woodbury-serving-b2b-customers-sodexo-2025-09-17s-yxp73z",
-    "title": "David Woodbury - Serving B2B Customers",
+    "title": "David Woodbury - Man on the Moon",
     "url": "https://www.linkedin.com/posts/activity-7376243776610258944-yMGn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-09-17s:",
+    "published": "2025-09-25s:",
     "contentType": "LinkedIn post",
     "publication": "LinkedIn",
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
-      "B2B Marketing",
-      "Customer Experience",
-      "Customer Service",
-      "Customer Satisfaction"
+      "Work-Culture"
     ],
     "tags": []
   },
   {
     "id": "david-woodbury-spirit-of-sodexo-sodexo-2025-09-09s-j7i75s",
-    "title": "David Woodbury - Spirit of Sodexo",
+    "title": "David Woodbury - Awards",
     "url": "https://www.linkedin.com/posts/activity-7373450827547590656-bKbG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
-    "published": "2025-09-09s:",
+    "published": "2025-09-02s:",
     "contentType": "LinkedIn post",
     "publication": "LinkedIn",
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
-      "Employee Experience",
-      "Servant Leadership"
+      "Workforce"
     ],
     "tags": []
   },
@@ -7633,11 +7533,11 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
       "Accountability",
-      "Small Business"
+      "Company-Building"
     ],
     "tags": []
   },
@@ -7651,10 +7551,10 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service"
+      "Food-Service"
     ],
     "topics": [
-      "DEI and ESG"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -7668,8 +7568,8 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Nonprofit Organization",
-      "Food Service"
+      "Nonprofit-Organization",
+      "Food-Service"
     ],
     "topics": [
       "Work-Culture"
@@ -7699,10 +7599,10 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Sports Team or Association"
+      "Sports-Team-or-Association"
     ],
     "topics": [
-      "Servant Leadership"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -7716,11 +7616,11 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service",
-      "**Business Category**: Food & Beverage"
+      "Food-Service",
+      "**Business-Category**:-Food-&-Beverage"
     ],
     "topics": [
-      "Food and Beverage and QSR"
+      "Food-and-Beverage"
     ],
     "tags": []
   },
@@ -7734,12 +7634,11 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service",
-      "Educational Nonprofit"
+      "Food-Service",
+      "Educational-Nonprofit"
     ],
     "topics": [
-      "Employee Experience",
-      "Employee Retention"
+      "Workforce"
     ],
     "tags": []
   },
@@ -7754,7 +7653,7 @@
     "organization": "Sodexo",
     "industry": [],
     "topics": [
-      "Servant Leadership",
+      "Work-Culture",
       "Accountability"
     ],
     "tags": []
@@ -7772,7 +7671,7 @@
       "Advertising"
     ],
     "topics": [
-      "Creative Agency"
+      "Creative-Agency"
     ],
     "tags": []
   },
@@ -7787,8 +7686,8 @@
     "organization": "Phoena Pang",
     "industry": [],
     "topics": [
-      "Mobile gaming",
-      "Mobile Advertising",
+      "Mobile-gaming",
+      "Advertising",
       "Consumer-Technology"
     ],
     "tags": []
@@ -7803,10 +7702,10 @@
     "person": "",
     "organization": "Mintegral\": \"Mintegral",
     "industry": [
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "DEI and ESG"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -7821,10 +7720,10 @@
     "organization": "\"Mintegral\": Sean Song - Mobvista/Mintegral",
     "industry": [
       "Marketing",
-      "All Tech"
+      "All-Tech"
     ],
     "topics": [
-      "DEI and ESG"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -7841,7 +7740,7 @@
       "Marketing"
     ],
     "topics": [
-      "Machine Learning",
+      "AI",
       "Advertising"
     ],
     "tags": []
@@ -7860,8 +7759,8 @@
     ],
     "topics": [
       "Retail",
-      "Mobile gaming",
-      "Mobile Advertising"
+      "Mobile-gaming",
+      "Advertising"
     ],
     "tags": []
   },
@@ -7880,8 +7779,8 @@
       "Adtech"
     ],
     "topics": [
-      "Business Analytics",
-      "Mobile gaming"
+      "Data-Analytics",
+      "Mobile-gaming"
     ],
     "tags": []
   },
@@ -7896,10 +7795,10 @@
     "organization": "Mintegral\": \"Mintegral",
     "industry": [],
     "topics": [
-      "Low code/no code",
+      "Digital-Transformation",
       "Automation",
-      "Marketing Automation",
-      "Data and Analytics"
+      "Marketing-Automation",
+      "Data-Analytics"
     ],
     "tags": []
   },
@@ -7914,10 +7813,10 @@
     "organization": "Jeff Sue",
     "industry": [
       "Advertising",
-      "Media and Entertainment Company"
+      "Media-and-Entertainment-Company"
     ],
     "topics": [
-      "Mobile gaming"
+      "Mobile-gaming"
     ],
     "tags": []
   },
@@ -7932,7 +7831,7 @@
     "organization": "Matthew Leopold",
     "industry": [],
     "topics": [
-      "Mobile gaming"
+      "Mobile-gaming"
     ],
     "tags": []
   },
@@ -7949,7 +7848,7 @@
       "Advertising"
     ],
     "topics": [
-      "TikTok Marketing"
+      "Advertising"
     ],
     "tags": []
   },
@@ -7966,13 +7865,13 @@
       "E-commerce"
     ],
     "topics": [
-      "Mobile gaming",
-      "Mobile Advertising"
+      "Mobile-gaming",
+      "Advertising"
     ],
     "tags": []
   },
   {
-    "id": "richard-socher-dld-you-com-2026-01-15s-ec52eo",
+    "id": "richard-socher-feynman-quote-you-com-2026-01-13s-n9wu52",
     "title": "Richard Socher - DLD",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7417562465657339904/",
     "published": "2026-01-15s:",
@@ -7982,22 +7881,22 @@
     "organization": "You.com",
     "industry": [],
     "topics": [
-      "AI Search"
+      "AI-Search"
     ],
     "tags": []
   },
   {
     "id": "richard-socher-feynman-quote-you-com-2026-01-13s-n9wu52",
-    "title": "Richard Socher - Feynman Quote",
+    "title": "Richard Socher - DLD",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7417562465657339904/",
-    "published": "2026-01-13s:",
+    "published": "2026-01-15s:",
     "contentType": "LinkedIn post",
     "publication": "LinkedIn",
     "person": "",
     "organization": "You.com",
     "industry": [],
     "topics": [
-      "AGI"
+      "AI-Search"
     ],
     "tags": []
   },
@@ -8041,10 +7940,10 @@
     "person": "",
     "organization": "Total Emphasis",
     "industry": [
-      "Content Strategy"
+      "Content-Strategy"
     ],
     "topics": [
-      "Essay Writing"
+      "Essay-Writing"
     ],
     "tags": []
   },
@@ -8061,7 +7960,25 @@
       "Film Production Company"
     ],
     "topics": [
-      "Film Production"
+      "Media"
+    ],
+    "tags": []
+  },
+  {
+    "id": "digging-deeper-into-advertising-s-lost-half-advertising-week-upwave-ikcl7c",
+    "title": "Digging Deeper Into Advertising’s Lost Half",
+    "url": "https://advertisingweek.com/digging-deeper-into-advertisings-lost-half/",
+    "published": "2023-10-16s:",
+    "contentType": "Byline",
+    "publication": "AdvertisingWeek",
+    "person": "",
+    "organization": "UpWave",
+    "industry": [
+      "Adtech",
+      "Media-Agency"
+    ],
+    "topics": [
+      "Advertising"
     ],
     "tags": []
   },
@@ -8093,7 +8010,7 @@
       "Healthcare"
     ],
     "topics": [
-      "VR in medicine"
+      "VR-AR"
     ],
     "tags": []
   },
@@ -8108,7 +8025,7 @@
     "organization": "Forge Global",
     "industry": [],
     "topics": [
-      "Alternative Investments",
+      "Finance",
       "Workforce"
     ],
     "tags": []
@@ -8126,7 +8043,7 @@
       "Marketing"
     ],
     "topics": [
-      "Gen Z"
+      "Consumer-Technology"
     ],
     "tags": []
   },
@@ -8140,17 +8057,17 @@
     "person": "",
     "organization": "OnSolve",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Responsible AI",
-      "Risk Management"
+      "AI",
+      "Risk-Compliance"
     ],
     "tags": []
   },
   {
-    "id": "hospitals-are-not-hotels-becky-hultberg-fgtdq7",
-    "title": "Hospitals Are Not Hotels",
+    "id": "jeff-manning-interview-becky-hultberg-7udcye",
+    "title": "Jeff Manning Interview",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:6988162813437341696?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
     "published": "",
     "contentType": "LinkedIn post",
@@ -8243,7 +8160,7 @@
     "person": "",
     "organization": "Gusto Brewing Co",
     "industry": [
-      "Brewery / Distillery"
+      "Brewery-/-Distillery"
     ],
     "topics": [],
     "tags": []
@@ -8264,22 +8181,6 @@
     "tags": []
   },
   {
-    "id": "digging-deeper-into-advertising-s-lost-half-advertising-week-upwave-ikcl7c",
-    "title": "Digging Deeper Into Advertising’s Lost Half – Advertising Week",
-    "url": "https://advertisingweek.com/digging-deeper-into-advertisings-lost-half/",
-    "published": "",
-    "contentType": "Byline",
-    "publication": "AdvertisingWeeks:",
-    "person": "",
-    "organization": "UpWave",
-    "industry": [
-      "Adtech",
-      "Advertising"
-    ],
-    "topics": [],
-    "tags": []
-  },
-  {
     "id": "predicting-2025-the-proliferation-of-media-networks-outcomes-and-the-c-h5bp02",
     "title": "Predicting 2025- The Proliferation of Media Networks, Outcomes, and the Continued Ascent of…",
     "url": "https://advertisingweek.com/predicting-2025-the-proliferation-of-media-networks-outcomes-and-the-continued-ascent-of-streaming-oh-and-ai/",
@@ -8293,7 +8194,7 @@
     ],
     "topics": [
       "Retail",
-      "Retail Media"
+      "Retail-Media"
     ],
     "tags": []
   },
@@ -8310,7 +8211,7 @@
       "Advertising"
     ],
     "topics": [
-      "Machine Learning"
+      "AI"
     ],
     "tags": []
   },
@@ -8327,7 +8228,7 @@
       "Advertising"
     ],
     "topics": [
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -8341,10 +8242,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Change Management"
+      "Change-Management"
     ],
     "tags": []
   },
@@ -8358,10 +8259,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "DEI and ESG"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -8378,7 +8279,7 @@
       "Healthcare"
     ],
     "topics": [
-      "AI and Healthcare"
+      "AI"
     ],
     "tags": []
   },
@@ -8392,7 +8293,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [],
     "tags": []
@@ -8408,10 +8309,10 @@
     "organization": "McKinsey",
     "industry": [
       "Insurance",
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Life Insurance"
+      "Insurance"
     ],
     "tags": []
   },
@@ -8425,11 +8326,11 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant",
+      "Management-Consultant",
       "Tourism"
     ],
     "topics": [
-      "Hospitality and Tourism"
+      "Travel"
     ],
     "tags": []
   },
@@ -8443,7 +8344,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
       "Company-Building"
@@ -8460,10 +8361,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Work-Life Balance"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -8477,7 +8378,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [],
     "tags": []
@@ -8492,8 +8393,8 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant",
-      "Fashion Company"
+      "Management-Consultant",
+      "Fashion-Company"
     ],
     "topics": [
       "Retail"
@@ -8510,10 +8411,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -8527,10 +8428,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -8544,10 +8445,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Cloud Myths"
+      "Cloud"
     ],
     "tags": []
   },
@@ -8561,8 +8462,8 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "IT Support and Management",
-      "Management Consultant"
+      "IT-Support-and-Management",
+      "Management-Consultant"
     ],
     "topics": [],
     "tags": []
@@ -8577,7 +8478,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [],
     "tags": []
@@ -8592,10 +8493,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Product-led Growth"
+      "Product"
     ],
     "tags": []
   },
@@ -8609,11 +8510,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Employee Experience",
-      "Employee Retention"
+      "Workforce"
     ],
     "tags": []
   },
@@ -8627,10 +8527,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "DEI and ESG"
+      "Work-Culture"
     ],
     "tags": []
   },
@@ -8659,10 +8559,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "New Business Building"
+      "Company-Building"
     ],
     "tags": []
   },
@@ -8676,7 +8576,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [],
     "tags": []
@@ -8691,7 +8591,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
       "Finance"
@@ -8699,7 +8599,7 @@
     "tags": []
   },
   {
-    "id": "mckinsey-ai-approach-mckinsey-ec3tvr",
+    "id": "technology-trends-mckinsey-lq4hiq",
     "title": "McKinsey AI Approach",
     "url": "https://www.linkedin.com/posts/vinayak-hv-7061222_aibymckinsey-artificialintelligence-generativeai-activity-7104402718303125504-lcg3/?utm_source=share&utm_medium=member_desktop",
     "published": "",
@@ -8708,10 +8608,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "AI in Consulting"
+      "AI"
     ],
     "tags": []
   },
@@ -8725,10 +8625,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Consumer Technology"
+      "Technology"
     ],
     "tags": []
   },
@@ -8742,7 +8642,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant",
+      "Management-Consultant",
       "Tourism"
     ],
     "topics": [],
@@ -8758,7 +8658,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
       "Sustainability"
@@ -8766,7 +8666,7 @@
     "tags": []
   },
   {
-    "id": "netflix-book-mckinsey-yhuje7",
+    "id": "volta-trucks-case-study-mckinsey-wi6p1z",
     "title": "Netflix book",
     "url": "https://www.linkedin.com/posts/ari-libarikian-b8720b_startups-can-often-succeed-where-legacy-businesses-activity-6859486305668132864-yFEi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
     "published": "",
@@ -8775,7 +8675,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
       "Media"
@@ -8792,10 +8692,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Generative AI"
+      "AI"
     ],
     "tags": []
   },
@@ -8809,7 +8709,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
       "Workforce"
@@ -8826,11 +8726,11 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
       "Retail",
-      "Retail Media"
+      "Retail-Media"
     ],
     "tags": []
   },
@@ -8844,13 +8744,13 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Retail Chain",
+      "Retail-Chain",
       "Adtech",
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
       "Retail",
-      "Retail Media"
+      "Retail-Media"
     ],
     "tags": []
   },
@@ -8864,14 +8764,14 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [],
     "tags": []
   },
   {
-    "id": "rewired-in-action-mckinsey-peglv5",
-    "title": "Rewired in Action",
+    "id": "technology-trends-mckinsey-lq4hiq",
+    "title": "McKinsey AI Approach",
     "url": "https://www.linkedin.com/posts/vinayak-hv-7061222_aibymckinsey-artificialintelligence-generativeai-activity-7104402718303125504-lcg3/?utm_source=share&utm_medium=member_desktop",
     "published": "",
     "contentType": "LinkedIn post",
@@ -8879,9 +8779,11 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
-    "topics": [],
+    "topics": [
+      "AI"
+    ],
     "tags": []
   },
   {
@@ -8894,11 +8796,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Workforce",
-      "Training and Development"
+      "Workforce"
     ],
     "tags": []
   },
@@ -8912,7 +8813,7 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
       "Sustainability"
@@ -8929,33 +8830,16 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Higher Education"
-    ],
-    "tags": []
-  },
-  {
-    "id": "technology-trends-mckinsey-f8t1op",
-    "title": "Technology Trends",
-    "url": "https://www.linkedin.com/posts/vinayak-hv-7061222_aibymckinsey-artificialintelligence-generativeai-activity-7104402718303125504-lcg3/?utm_source=share&utm_medium=member_desktop",
-    "published": "",
-    "contentType": "LinkedIn post",
-    "publication": "LinkedIns:",
-    "person": "",
-    "organization": "McKinsey",
-    "industry": [
-      "Management Consultant"
-    ],
-    "topics": [
-      "Technology Transfer"
+      "Education"
     ],
     "tags": []
   },
   {
     "id": "technology-trends-mckinsey-lq4hiq",
-    "title": "Technology Trends",
+    "title": "McKinsey AI Approach",
     "url": "https://www.linkedin.com/posts/vinayak-hv-7061222_aibymckinsey-artificialintelligence-generativeai-activity-7104402718303125504-lcg3/?utm_source=share&utm_medium=member_desktop",
     "published": "",
     "contentType": "LinkedIn post",
@@ -8963,16 +8847,33 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Consumer Technology"
+      "AI"
     ],
     "tags": []
   },
   {
-    "id": "technology-and-insurance-industry-mckinsey-1v2ok7",
-    "title": "Technology and insurance industry",
+    "id": "technology-trends-mckinsey-lq4hiq",
+    "title": "McKinsey AI Approach",
+    "url": "https://www.linkedin.com/posts/vinayak-hv-7061222_aibymckinsey-artificialintelligence-generativeai-activity-7104402718303125504-lcg3/?utm_source=share&utm_medium=member_desktop",
+    "published": "",
+    "contentType": "LinkedIn post",
+    "publication": "LinkedIns:",
+    "person": "",
+    "organization": "McKinsey",
+    "industry": [
+      "Management-Consultant"
+    ],
+    "topics": [
+      "AI"
+    ],
+    "tags": []
+  },
+  {
+    "id": "volta-trucks-case-study-mckinsey-wi6p1z",
+    "title": "Netflix book",
     "url": "https://www.linkedin.com/posts/ari-libarikian-b8720b_startups-can-often-succeed-where-legacy-businesses-activity-6859486305668132864-yFEi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
     "published": "",
     "contentType": "LinkedIn post",
@@ -8980,9 +8881,11 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Insurance"
+      "Management-Consultant"
     ],
-    "topics": [],
+    "topics": [
+      "Media"
+    ],
     "tags": []
   },
   {
@@ -8995,16 +8898,16 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "New Business Building"
+      "Company-Building"
     ],
     "tags": []
   },
   {
     "id": "volta-trucks-case-study-mckinsey-wi6p1z",
-    "title": "Volta Trucks Case Study",
+    "title": "Netflix book",
     "url": "https://www.linkedin.com/posts/ari-libarikian-b8720b_startups-can-often-succeed-where-legacy-businesses-activity-6859486305668132864-yFEi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAA3TABufjct_dj5o96jQ_ELwtUVCtVVhM",
     "published": "",
     "contentType": "LinkedIn post",
@@ -9012,12 +8915,10 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
     "topics": [
-      "Entrepreneurship Strategy",
-      "Fleet",
-      "Electric Vehicles"
+      "Media"
     ],
     "tags": []
   },
@@ -9031,11 +8932,9 @@
     "person": "",
     "organization": "McKinsey",
     "industry": [
-      "Management Consultant"
+      "Management-Consultant"
     ],
-    "topics": [
-      "Case Study"
-    ],
+    "topics": [],
     "tags": []
   }
 ]
