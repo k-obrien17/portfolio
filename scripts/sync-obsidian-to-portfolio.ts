@@ -229,7 +229,10 @@ async function main() {
     const title = (yaml.title as string) || fileName.split(" - ")[0];
 
     const org = cleanWikilink((yaml.organization as string) || "");
-    const published = (yaml.published as string) || (yaml.datePublished as string) || "";
+    // Clean date - extract just YYYY-MM-DD, removing any trailing corruption like "s:"
+    const rawPublished = (yaml.published as string) || (yaml.datePublished as string) || "";
+    const dateMatch = rawPublished.match(/^(\d{4}-\d{2}-\d{2})/);
+    const published = dateMatch ? dateMatch[1] : "";
 
     const item: ContentItem = {
       id: generateId(title, org, published, filePath),
