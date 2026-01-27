@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Suspense } from "react";
 import { getPublishedContent, getOrganizations } from "@/lib/content";
 import WorkBrowser from "./work-browser";
 
@@ -22,7 +23,9 @@ export default function WritingPage() {
         </p>
       </div>
 
-      <WorkBrowser initialContent={content} />
+      <Suspense fallback={<div className="text-gray-500">Loading...</div>}>
+        <WorkBrowser initialContent={content} />
+      </Suspense>
     </div>
   );
 }

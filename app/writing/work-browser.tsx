@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useCallback } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Fuse from "fuse.js";
 import type { ContentItem } from "@/lib/types";
 
@@ -50,14 +51,35 @@ function sortByCount(counts: Record<string, number>): string[] {
 }
 
 export default function WorkBrowser({ initialContent }: Props) {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
   const [mounted, setMounted] = useState(false);
   const [search, setSearch] = useState("");
-  const [selectedContentType, setSelectedContentType] = useState<string | null>(null);
-  const [selectedIndustry, setSelectedIndustry] = useState<string | null>(null);
-  const [selectedOrganization, setSelectedOrganization] = useState<string | null>(null);
-  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
-  const [showMoreFilters, setShowMoreFilters] = useState(false);
   const [visibleCount, setVisibleCount] = useState(24);
+
+  // Read filters from URL
+  const selectedContentType = searchParams.get("type");
+  const selectedIndustry = searchParams.get("industry");
+  const selectedOrganization = searchParams.get("client");
+  const selectedTopic = searchParams.get("topic");
+
+  // Update URL when filters change
+  const updateFilters = useCallback((updates: Record<string, string | null>) => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    Object.entries(updates).forEach(([key, value]) => {
+      if (value) {
+        params.set(key, value);
+      } else {
+        params.delete(key);
+      }
+    });
+
+    const queryString = params.toString();
+    router.push(queryString ? `/writing?${queryString}` : "/writing", { scroll: false });
+    setVisibleCount(24);
+  }, [router, searchParams]);
 
   useEffect(() => {
     setMounted(true);
@@ -69,11 +91,11 @@ export default function WorkBrowser({ initialContent }: Props) {
   const organizationCounts = useMemo(() => getCounts(initialContent, "organization"), [initialContent]);
   const topicCounts = useMemo(() => getCounts(initialContent, "topics"), [initialContent]);
 
-  // Sorted lists
+  // Sorted lists (all items for dropdowns)
   const contentTypes = useMemo(() => sortByCount(contentTypeCounts), [contentTypeCounts]);
   const industries = useMemo(() => sortByCount(industryCounts), [industryCounts]);
-  const organizations = useMemo(() => sortByCount(organizationCounts).slice(0, 15), [organizationCounts]); // Top 15
-  const topics = useMemo(() => sortByCount(topicCounts).slice(0, 20), [topicCounts]); // Top 20
+  const organizations = useMemo(() => sortByCount(organizationCounts), [organizationCounts]);
+  const topics = useMemo(() => sortByCount(topicCounts), [topicCounts]);
 
   // Setup Fuse.js for fuzzy search
   const fuse = useMemo(() => {
@@ -122,12 +144,9 @@ export default function WorkBrowser({ initialContent }: Props) {
 
   const clearFilters = useCallback(() => {
     setSearch("");
-    setSelectedContentType(null);
-    setSelectedIndustry(null);
-    setSelectedOrganization(null);
-    setSelectedTopic(null);
+    router.push("/writing", { scroll: false });
     setVisibleCount(24);
-  }, []);
+  }, [router]);
 
   const hasFilters = search || selectedContentType || selectedIndustry || selectedOrganization || selectedTopic;
 
@@ -176,139 +195,91 @@ export default function WorkBrowser({ initialContent }: Props) {
         </div>
       </div>
 
-      {/* Content Type Filter (Primary) */}
-      <div className="mb-4">
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by content type">
-          {contentTypes.map((type) => (
-            <button
-              key={type}
-              type="button"
-              onClick={() => {
-                setSelectedContentType(selectedContentType === type ? null : type);
-                setVisibleCount(24);
-              }}
-              disabled={!mounted}
-              className={`px-3 py-1.5 text-sm rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
-                selectedContentType === type
-                  ? "bg-orange-500 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-              }`}
-              aria-pressed={selectedContentType === type}
-            >
-              {type}
-              <span className={`ml-1.5 text-xs ${selectedContentType === type ? "text-orange-200" : "text-gray-400"}`}>
-                {contentTypeCounts[type]}
-              </span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* More Filters Toggle */}
-      <div className="mb-6">
-        <button
-          type="button"
-          onClick={() => setShowMoreFilters(!showMoreFilters)}
-          disabled={!mounted}
-          className="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded"
-        >
-          <svg
-            className={`w-4 h-4 transition-transform ${showMoreFilters ? "rotate-180" : ""}`}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+      {/* Filter Dropdowns */}
+      <div className="mb-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+        {/* Content Type */}
+        <div>
+          <label htmlFor="filter-type" className="sr-only">Content Type</label>
+          <select
+            id="filter-type"
+            value={selectedContentType || ""}
+            onChange={(e) => updateFilters({ type: e.target.value || null })}
+            disabled={!mounted}
+            className={`w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white appearance-none cursor-pointer ${
+              selectedContentType ? "border-orange-300 text-orange-700" : "border-gray-200 text-gray-700"
+            }`}
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-          {showMoreFilters ? "Hide filters" : "More filters"}
-        </button>
+            <option value="">All Types</option>
+            {contentTypes.map((type) => (
+              <option key={type} value={type}>
+                {type} ({contentTypeCounts[type]})
+              </option>
+            ))}
+          </select>
+        </div>
 
-        {/* Secondary Filters */}
-        {showMoreFilters && (
-          <div className="mt-4 pt-4 border-t border-gray-100 space-y-4">
-            {/* Industry */}
-            {industries.length > 0 && (
-              <div>
-                <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Industry</div>
-                <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by industry">
-                  {industries.map((industry) => (
-                    <button
-                      key={industry}
-                      type="button"
-                      onClick={() => {
-                        setSelectedIndustry(selectedIndustry === industry ? null : industry);
-                        setVisibleCount(24);
-                      }}
-                      disabled={!mounted}
-                      className={`px-2.5 py-1 text-xs rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 ${
-                        selectedIndustry === industry
-                          ? "bg-gray-800 text-white"
-                          : "bg-gray-50 text-gray-600 hover:bg-gray-100"
-                      }`}
-                      aria-pressed={selectedIndustry === industry}
-                    >
-                      {industry}
-                      <span className="ml-1 text-gray-400">{industryCounts[industry]}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
+        {/* Industry */}
+        <div>
+          <label htmlFor="filter-industry" className="sr-only">Industry</label>
+          <select
+            id="filter-industry"
+            value={selectedIndustry || ""}
+            onChange={(e) => updateFilters({ industry: e.target.value || null })}
+            disabled={!mounted}
+            className={`w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white appearance-none cursor-pointer ${
+              selectedIndustry ? "border-orange-300 text-orange-700" : "border-gray-200 text-gray-700"
+            }`}
+          >
+            <option value="">All Industries</option>
+            {industries.map((industry) => (
+              <option key={industry} value={industry}>
+                {industry} ({industryCounts[industry]})
+              </option>
+            ))}
+          </select>
+        </div>
 
-            {/* Client/Organization */}
-            <div>
-              <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Client</div>
-              <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by client">
-                {organizations.map((org) => (
-                  <button
-                    key={org}
-                    type="button"
-                    onClick={() => {
-                      setSelectedOrganization(selectedOrganization === org ? null : org);
-                      setVisibleCount(24);
-                    }}
-                    disabled={!mounted}
-                    className={`px-2.5 py-1 text-xs rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 ${
-                      selectedOrganization === org
-                        ? "bg-gray-800 text-white"
-                        : "bg-gray-50 text-gray-600 hover:bg-gray-100"
-                    }`}
-                    aria-pressed={selectedOrganization === org}
-                  >
-                    {org}
-                  </button>
-                ))}
-              </div>
-            </div>
+        {/* Client */}
+        <div>
+          <label htmlFor="filter-client" className="sr-only">Client</label>
+          <select
+            id="filter-client"
+            value={selectedOrganization || ""}
+            onChange={(e) => updateFilters({ client: e.target.value || null })}
+            disabled={!mounted}
+            className={`w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white appearance-none cursor-pointer ${
+              selectedOrganization ? "border-orange-300 text-orange-700" : "border-gray-200 text-gray-700"
+            }`}
+          >
+            <option value="">All Clients</option>
+            {organizations.map((org) => (
+              <option key={org} value={org}>
+                {org} ({organizationCounts[org]})
+              </option>
+            ))}
+          </select>
+        </div>
 
-            {/* Topics */}
-            <div>
-              <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Topics</div>
-              <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by topic">
-                {topics.map((topic) => (
-                  <button
-                    key={topic}
-                    type="button"
-                    onClick={() => {
-                      setSelectedTopic(selectedTopic === topic ? null : topic);
-                      setVisibleCount(24);
-                    }}
-                    disabled={!mounted}
-                    className={`px-2.5 py-1 text-xs rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 ${
-                      selectedTopic === topic
-                        ? "bg-gray-800 text-white"
-                        : "bg-gray-50 text-gray-600 hover:bg-gray-100"
-                    }`}
-                    aria-pressed={selectedTopic === topic}
-                  >
-                    {topic}
-                    <span className="ml-1 text-gray-400">{topicCounts[topic]}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Topic */}
+        <div>
+          <label htmlFor="filter-topic" className="sr-only">Topic</label>
+          <select
+            id="filter-topic"
+            value={selectedTopic || ""}
+            onChange={(e) => updateFilters({ topic: e.target.value || null })}
+            disabled={!mounted}
+            className={`w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white appearance-none cursor-pointer ${
+              selectedTopic ? "border-orange-300 text-orange-700" : "border-gray-200 text-gray-700"
+            }`}
+          >
+            <option value="">All Topics</option>
+            {topics.map((topic) => (
+              <option key={topic} value={topic}>
+                {topic} ({topicCounts[topic]})
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* Results header */}
