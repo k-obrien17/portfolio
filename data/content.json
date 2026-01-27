@@ -233,8 +233,8 @@
     "person": "",
     "organization": "Sleep.aI",
     "industry": [
-      "Healthtech",
-      "**Business Category**: Healthcare & Wellness"
+      "Healthcare",
+      "Healthcare"
     ],
     "topics": [],
     "tags": [
@@ -916,8 +916,8 @@
     "person": "",
     "organization": "33 Across",
     "industry": [
-      "Adtech",
-      "**Business Category**: Marketing, Advertising, and Communications"
+      "Marketing & Advertising",
+      "Marketing & Advertising"
     ],
     "topics": [],
     "tags": [
@@ -1971,7 +1971,7 @@
     ],
     "topics": [],
     "tags": [
-      "Food Service",
+      "Food & Beverage",
       "Food Waste"
     ]
   },
@@ -2126,7 +2126,7 @@
     "industry": [],
     "topics": [],
     "tags": [
-      "Food Service"
+      "Food & Beverage"
     ]
   },
   {
@@ -2244,8 +2244,8 @@
     "person": "",
     "organization": "Sodexo",
     "industry": [
-      "Food Service",
-      "**Business Category**: Food & Beverage"
+      "Food & Beverage",
+      "Food & Beverage"
     ],
     "topics": [],
     "tags": [
@@ -4561,24 +4561,6 @@
     ]
   },
   {
-    "id": "digging-deeper-into-advertising-s-lost-half-advertising-week-upwave-ikcl7c",
-    "title": "Digging Deeper Into Advertising’s Lost Half",
-    "url": "https://advertisingweek.com/digging-deeper-into-advertisings-lost-half/",
-    "published": "2023-10-16s:",
-    "contentType": "Byline",
-    "publication": "AdvertisingWeek",
-    "person": "",
-    "organization": "UpWave",
-    "industry": [
-      "Marketing & Advertising",
-      "Media & Content"
-    ],
-    "topics": [],
-    "tags": [
-      "Advertising Measurement"
-    ]
-  },
-  {
     "id": "six-keys-to-achieving-advanced-container-monitoring-ibm-2023-10-16-er6hvs",
     "title": "Six Keys to Achieving Advanced Container Monitoring",
     "url": "https://www.ibm.com/blog/six-keys-to-achieving-advanced-container-monitoring/",
@@ -4593,24 +4575,6 @@
     "topics": [],
     "tags": [
       "Security and Infrastructure"
-    ]
-  },
-  {
-    "id": "digging-deeper-into-advertising-s-lost-half-advertising-week-upwave-ikcl7c",
-    "title": "Digging Deeper Into Advertising’s Lost Half",
-    "url": "https://advertisingweek.com/digging-deeper-into-advertisings-lost-half/",
-    "published": "2023-10-16s:",
-    "contentType": "Byline",
-    "publication": "AdvertisingWeek",
-    "person": "",
-    "organization": "UpWave",
-    "industry": [
-      "Marketing & Advertising",
-      "Media & Content"
-    ],
-    "topics": [],
-    "tags": [
-      "Advertising Measurement"
     ]
   },
   {
@@ -5507,35 +5471,37 @@
     "id": "on-the-enduring-power-of-the-blank-canvas-total-emphasis-2023-03-18-70pr7m",
     "title": "On the Enduring Power of the Blank Canvas",
     "url": "https://survivalsignal.beehiiv.com/p/enduring-power-blank-canvas",
-    "published": "2023-03-18s:",
+    "published": "2023-03-18",
     "contentType": "Newsletter",
     "publication": "Survival Signal",
-    "person": "",
-    "organization": "Total Emphasis",
+    "person": "[Keith O'Brien]",
+    "organization": "[Total Emphasis]",
     "industry": [
       "Media & Content"
     ],
-    "topics": [],
-    "tags": [
-      "Essay Writing"
-    ]
+    "topics": [
+      "Essay-Writing",
+      "Content-Strategy"
+    ],
+    "tags": []
   },
   {
     "id": "on-the-enduring-power-of-the-blank-canvas-total-emphasis-2023-03-18-70pr7m",
     "title": "On the Enduring Power of the Blank Canvas",
     "url": "https://survivalsignal.beehiiv.com/p/enduring-power-blank-canvas",
-    "published": "2023-03-18s:",
+    "published": "2023-03-18",
     "contentType": "Newsletter",
     "publication": "Survival Signal",
-    "person": "",
-    "organization": "Total Emphasis",
+    "person": "[Keith O'Brien]",
+    "organization": "[Total Emphasis]",
     "industry": [
       "Media & Content"
     ],
-    "topics": [],
-    "tags": [
-      "Essay Writing"
-    ]
+    "topics": [
+      "Essay-Writing",
+      "Content-Strategy"
+    ],
+    "tags": []
   },
   {
     "id": "do-generative-ai-tools-like-chatgpt-live-up-to-their-hype-ust-2023-03--zam4kr",
@@ -8049,6 +8015,42 @@
     "topics": [],
     "tags": [
       "Ecosystems"
+    ]
+  },
+  {
+    "id": "digging-deeper-into-advertising-s-lost-half-advertising-week-upwave-ikcl7c",
+    "title": "Digging Deeper Into Advertising’s Lost Half",
+    "url": "https://advertisingweek.com/digging-deeper-into-advertisings-lost-half/",
+    "published": "2023-10-16s:",
+    "contentType": "Byline",
+    "publication": "AdvertisingWeek",
+    "person": "",
+    "organization": "UpWave",
+    "industry": [
+      "Marketing & Advertising",
+      "Media & Content"
+    ],
+    "topics": [],
+    "tags": [
+      "Advertising Measurement"
+    ]
+  },
+  {
+    "id": "digging-deeper-into-advertising-s-lost-half-advertising-week-upwave-ikcl7c",
+    "title": "Digging Deeper Into Advertising’s Lost Half",
+    "url": "https://advertisingweek.com/digging-deeper-into-advertisings-lost-half/",
+    "published": "2023-10-16s:",
+    "contentType": "Byline",
+    "publication": "AdvertisingWeek",
+    "person": "",
+    "organization": "UpWave",
+    "industry": [
+      "Marketing & Advertising",
+      "Media & Content"
+    ],
+    "topics": [],
+    "tags": [
+      "Advertising Measurement"
     ]
   },
   {
