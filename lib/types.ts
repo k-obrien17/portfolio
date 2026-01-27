@@ -9,6 +9,7 @@ export interface ContentItem {
   publication: string;
   person: string;
   organization: string;
+  industry: string[];
   topics: string[];
   tags: string[];
 }

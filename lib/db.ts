@@ -20,6 +20,7 @@ interface DbContentRow {
   publication: string;
   person: string;
   organization: string;
+  industry: string[];
   topics: string[];
   tags: string[];
   created_at?: string;
@@ -37,6 +38,7 @@ function rowToContentItem(row: DbContentRow): ContentItem {
     publication: row.publication,
     person: row.person,
     organization: row.organization,
+    industry: row.industry || [],
     topics: row.topics || [],
     tags: row.tags || [],
   };
@@ -56,6 +58,7 @@ export async function initializeDatabase() {
       publication TEXT,
       person TEXT,
       organization TEXT,
+      industry TEXT[] DEFAULT '{}',
       topics TEXT[] DEFAULT '{}',
       tags TEXT[] DEFAULT '{}',
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -95,7 +98,7 @@ export async function getContentById(id: string): Promise<ContentItem | null> {
 export async function createContent(content: ContentItem): Promise<ContentItem> {
   const sql = getDb();
   const rows = await sql`
-    INSERT INTO content (id, title, url, published, content_type, publication, person, organization, topics, tags)
+    INSERT INTO content (id, title, url, published, content_type, publication, person, organization, industry, topics, tags)
     VALUES (
       ${content.id},
       ${content.title},
@@ -105,6 +108,7 @@ export async function createContent(content: ContentItem): Promise<ContentItem> 
       ${content.publication},
       ${content.person},
       ${content.organization},
+      ${content.industry},
       ${content.topics},
       ${content.tags}
     )
@@ -125,6 +129,7 @@ export async function updateContent(id: string, content: Partial<ContentItem>): 
       publication = COALESCE(${content.publication}, publication),
       person = COALESCE(${content.person}, person),
       organization = COALESCE(${content.organization}, organization),
+      industry = COALESCE(${content.industry}, industry),
       topics = COALESCE(${content.topics}, topics),
       tags = COALESCE(${content.tags}, tags),
       updated_at = CURRENT_TIMESTAMP
@@ -195,7 +200,7 @@ export async function bulkInsertContent(items: ContentItem[]) {
     const publishedDate = item.published && item.published !== '' ? item.published : null;
 
     await sql`
-      INSERT INTO content (id, title, url, published, content_type, publication, person, organization, topics, tags)
+      INSERT INTO content (id, title, url, published, content_type, publication, person, organization, industry, topics, tags)
       VALUES (
         ${item.id},
         ${item.title},
@@ -205,6 +210,7 @@ export async function bulkInsertContent(items: ContentItem[]) {
         ${item.publication || ''},
         ${item.person || ''},
         ${item.organization || ''},
+        ${item.industry || []},
         ${item.topics || []},
         ${item.tags || []}
       )
@@ -216,6 +222,7 @@ export async function bulkInsertContent(items: ContentItem[]) {
         publication = EXCLUDED.publication,
         person = EXCLUDED.person,
         organization = EXCLUDED.organization,
+        industry = EXCLUDED.industry,
         topics = EXCLUDED.topics,
         tags = EXCLUDED.tags,
         updated_at = CURRENT_TIMESTAMP

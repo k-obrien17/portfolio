@@ -14,6 +14,7 @@ interface ContentItem {
   publication: string;
   person: string;
   organization: string;
+  industry: string[];
   topics: string[];
   tags: string[];
 }
@@ -151,17 +152,58 @@ function findContentFiles(dir: string): string[] {
   return files;
 }
 
+function itemsEqual(a: ContentItem, b: ContentItem): boolean {
+  return (
+    a.title === b.title &&
+    a.published === b.published &&
+    a.contentType === b.contentType &&
+    a.publication === b.publication &&
+    a.person === b.person &&
+    a.organization === b.organization &&
+    JSON.stringify(a.industry) === JSON.stringify(b.industry) &&
+    JSON.stringify(a.topics) === JSON.stringify(b.topics) &&
+    JSON.stringify(a.tags) === JSON.stringify(b.tags)
+  );
+}
+
 async function main() {
-  console.log("Syncing Obsidian vault to portfolio JSON...");
+  // Check for flags
+  const fullReplace = process.argv.includes("--full");
+  const updateMode = process.argv.includes("--update");
+
+  if (fullReplace) {
+    console.log("FULL SYNC: Replacing all content...");
+  } else if (updateMode) {
+    console.log("UPDATE SYNC: Adding new + updating changed items...");
+  } else {
+    console.log("INCREMENTAL SYNC: Adding new items only...");
+  }
   console.log(`Source: ${ORGANIZATIONS_PATH}`);
   console.log(`Output: ${OUTPUT_PATH}\n`);
 
-  const allFiles = findContentFiles(ORGANIZATIONS_PATH);
-  console.log(`Found ${allFiles.length} content files`);
+  // Load existing content
+  let existingItems: ContentItem[] = [];
+  const existingByUrl = new Map<string, ContentItem>();
 
-  const items: ContentItem[] = [];
+  if (!fullReplace && fs.existsSync(OUTPUT_PATH)) {
+    try {
+      existingItems = JSON.parse(fs.readFileSync(OUTPUT_PATH, "utf-8"));
+      existingItems.forEach(item => existingByUrl.set(item.url, item));
+      console.log(`Loaded ${existingItems.length} existing items`);
+    } catch (e) {
+      console.log("Could not load existing content, starting fresh");
+    }
+  }
+
+  const allFiles = findContentFiles(ORGANIZATIONS_PATH);
+  console.log(`Found ${allFiles.length} content files in Obsidian`);
+
+  const newItems: ContentItem[] = [];
+  const updatedItems: ContentItem[] = [];
+  const obsidianUrls = new Set<string>();
   let skippedNoPortfolio = 0;
   let skippedNoUrl = 0;
+  let skippedUnchanged = 0;
 
   for (const filePath of allFiles) {
     const content = fs.readFileSync(filePath, "utf-8");
@@ -179,6 +221,9 @@ async function main() {
       continue;
     }
 
+    const url = yaml.url as string;
+    obsidianUrls.add(url);
+
     // Extract title from filename if not in frontmatter
     const fileName = path.basename(filePath, ".md");
     const title = (yaml.title as string) || fileName.split(" - ")[0];
@@ -189,21 +234,49 @@ async function main() {
     const item: ContentItem = {
       id: generateId(title, org, published, filePath),
       title: title,
-      url: yaml.url as string,
+      url: url,
       published: published,
       contentType: (yaml.content_type as string) || (yaml.contentType as string) || "",
       publication: (yaml.publication as string) || "",
       person: cleanWikilink((yaml.person as string) || ""),
       organization: org,
+      industry: Array.isArray(yaml.industry) ? yaml.industry : yaml.industry ? [yaml.industry as string] : [],
       topics: Array.isArray(yaml.topics) ? yaml.topics : yaml.topics ? [yaml.topics as string] : [],
       tags: Array.isArray(yaml.tags) ? yaml.tags : yaml.tags ? [yaml.tags as string] : [],
     };
 
-    items.push(item);
+    const existing = existingByUrl.get(url);
+
+    if (!existing) {
+      // New item
+      newItems.push(item);
+    } else if (updateMode && !itemsEqual(item, existing)) {
+      // Changed item - preserve the original ID
+      item.id = existing.id;
+      updatedItems.push(item);
+    } else {
+      skippedUnchanged++;
+    }
+  }
+
+  // Build final list
+  let finalItems: ContentItem[];
+
+  if (fullReplace) {
+    finalItems = newItems;
+  } else {
+    // Start with existing items
+    finalItems = existingItems.map(item => {
+      // Replace with updated version if exists
+      const updated = updatedItems.find(u => u.url === item.url);
+      return updated || item;
+    });
+    // Add new items
+    finalItems.push(...newItems);
   }
 
   // Sort by date (newest first)
-  items.sort((a, b) => {
+  finalItems.sort((a, b) => {
     if (!a.published && !b.published) return 0;
     if (!a.published) return 1;
     if (!b.published) return -1;
@@ -211,14 +284,24 @@ async function main() {
   });
 
   // Write JSON
-  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(items, null, 2));
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(finalItems, null, 2));
 
-  console.log(`\n✓ Synced ${items.length} items to portfolio`);
+  if (fullReplace) {
+    console.log(`\n✓ Full sync: ${finalItems.length} items`);
+  } else {
+    console.log(`\n✓ Sync complete`);
+    console.log(`  Added: ${newItems.length} new items`);
+    if (updateMode) {
+      console.log(`  Updated: ${updatedItems.length} changed items`);
+    }
+    console.log(`  Unchanged: ${skippedUnchanged}`);
+    console.log(`  Total: ${finalItems.length} items`);
+  }
   console.log(`  Skipped ${skippedNoPortfolio} (no portfolio: true)`);
   console.log(`  Skipped ${skippedNoUrl} (no URL)`);
 
   // Stats by content type
-  const byType = items.reduce(
+  const byType = finalItems.reduce(
     (acc, item) => {
       const type = item.contentType || "Unknown";
       acc[type] = (acc[type] || 0) + 1;
@@ -235,7 +318,7 @@ async function main() {
     });
 
   // Stats by organization
-  const byOrg = items.reduce(
+  const byOrg = finalItems.reduce(
     (acc, item) => {
       const org = item.organization || "Unknown";
       acc[org] = (acc[org] || 0) + 1;

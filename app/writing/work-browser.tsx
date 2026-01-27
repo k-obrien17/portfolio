@@ -3,30 +3,12 @@
 import { useState, useMemo, useEffect, useCallback } from "react";
 import Fuse from "fuse.js";
 import type { ContentItem } from "@/lib/types";
-import {
-  WorkType,
-  ProblemArea,
-  WORK_TYPES,
-  PROBLEM_AREAS,
-  getWorkType,
-  getProblemArea,
-  getWorkTypeOrder,
-  getProblemAreaOrder,
-  generateSummary,
-} from "@/lib/taxonomy";
-
-interface EnrichedContent extends ContentItem {
-  workType: WorkType;
-  problemArea: ProblemArea;
-  summary: string;
-}
 
 interface Props {
   initialContent: ContentItem[];
-  topClients: string[];
 }
 
-// Highlight matching text
+// Highlight matching text in search results
 function highlightMatch(text: string, query: string): React.ReactNode {
   if (!query.trim()) return text;
 
@@ -44,36 +26,63 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   );
 }
 
-export default function WorkBrowser({ initialContent, topClients }: Props) {
+// Get counts for a field
+function getCounts(items: ContentItem[], field: keyof ContentItem): Record<string, number> {
+  const counts: Record<string, number> = {};
+  items.forEach((item) => {
+    const value = item[field];
+    if (Array.isArray(value)) {
+      value.forEach((v) => {
+        if (v) counts[v] = (counts[v] || 0) + 1;
+      });
+    } else if (value) {
+      counts[value as string] = (counts[value as string] || 0) + 1;
+    }
+  });
+  return counts;
+}
+
+// Sort by count descending
+function sortByCount(counts: Record<string, number>): string[] {
+  return Object.entries(counts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([key]) => key);
+}
+
+export default function WorkBrowser({ initialContent }: Props) {
   const [mounted, setMounted] = useState(false);
   const [search, setSearch] = useState("");
-  const [selectedWorkType, setSelectedWorkType] = useState<WorkType | null>(null);
-  const [selectedProblemArea, setSelectedProblemArea] = useState<ProblemArea | null>(null);
-  const [selectedClient, setSelectedClient] = useState<string | null>(null);
-  const [showSecondaryFilters, setShowSecondaryFilters] = useState(false);
+  const [selectedContentType, setSelectedContentType] = useState<string | null>(null);
+  const [selectedIndustry, setSelectedIndustry] = useState<string | null>(null);
+  const [selectedOrganization, setSelectedOrganization] = useState<string | null>(null);
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+  const [showMoreFilters, setShowMoreFilters] = useState(false);
   const [visibleCount, setVisibleCount] = useState(24);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Enrich content with taxonomy
-  const enrichedContent = useMemo((): EnrichedContent[] => {
-    return initialContent.map((item) => ({
-      ...item,
-      workType: getWorkType(item.contentType),
-      problemArea: getProblemArea(item.topics, item.tags),
-      summary: generateSummary(item.title, item.organization, item.contentType, item.tags),
-    }));
-  }, [initialContent]);
+  // Get unique values and counts
+  const contentTypeCounts = useMemo(() => getCounts(initialContent, "contentType"), [initialContent]);
+  const industryCounts = useMemo(() => getCounts(initialContent, "industry"), [initialContent]);
+  const organizationCounts = useMemo(() => getCounts(initialContent, "organization"), [initialContent]);
+  const topicCounts = useMemo(() => getCounts(initialContent, "topics"), [initialContent]);
+
+  // Sorted lists
+  const contentTypes = useMemo(() => sortByCount(contentTypeCounts), [contentTypeCounts]);
+  const industries = useMemo(() => sortByCount(industryCounts), [industryCounts]);
+  const organizations = useMemo(() => sortByCount(organizationCounts).slice(0, 15), [organizationCounts]); // Top 15
+  const topics = useMemo(() => sortByCount(topicCounts).slice(0, 20), [topicCounts]); // Top 20
 
   // Setup Fuse.js for fuzzy search
   const fuse = useMemo(() => {
-    return new Fuse(enrichedContent, {
+    return new Fuse(initialContent, {
       keys: [
         { name: "title", weight: 2 },
         { name: "organization", weight: 1.5 },
-        { name: "summary", weight: 1 },
+        { name: "topics", weight: 1 },
+        { name: "industry", weight: 1 },
         { name: "tags", weight: 0.8 },
         { name: "person", weight: 0.5 },
         { name: "publication", weight: 0.5 },
@@ -82,31 +91,11 @@ export default function WorkBrowser({ initialContent, topClients }: Props) {
       ignoreLocation: true,
       includeScore: true,
     });
-  }, [enrichedContent]);
+  }, [initialContent]);
 
-  // Count items per work type
-  const workTypeCounts = useMemo(() => {
-    const counts: Record<WorkType, number> = {} as Record<WorkType, number>;
-    getWorkTypeOrder().forEach((type) => (counts[type] = 0));
-    enrichedContent.forEach((item) => {
-      counts[item.workType] = (counts[item.workType] || 0) + 1;
-    });
-    return counts;
-  }, [enrichedContent]);
-
-  // Count items per problem area
-  const problemAreaCounts = useMemo(() => {
-    const counts: Record<ProblemArea, number> = {} as Record<ProblemArea, number>;
-    getProblemAreaOrder().forEach((area) => (counts[area] = 0));
-    enrichedContent.forEach((item) => {
-      counts[item.problemArea] = (counts[item.problemArea] || 0) + 1;
-    });
-    return counts;
-  }, [enrichedContent]);
-
-  // Filter and search
+  // Filter content
   const filteredContent = useMemo(() => {
-    let results = enrichedContent;
+    let results = initialContent;
 
     // Apply search
     if (search.trim()) {
@@ -114,48 +103,33 @@ export default function WorkBrowser({ initialContent, topClients }: Props) {
       results = searchResults.map((r) => r.item);
     }
 
-    // Apply work type filter
-    if (selectedWorkType) {
-      results = results.filter((item) => item.workType === selectedWorkType);
+    // Apply filters
+    if (selectedContentType) {
+      results = results.filter((item) => item.contentType === selectedContentType);
     }
-
-    // Apply problem area filter
-    if (selectedProblemArea) {
-      results = results.filter((item) => item.problemArea === selectedProblemArea);
+    if (selectedIndustry) {
+      results = results.filter((item) => item.industry?.includes(selectedIndustry));
     }
-
-    // Apply client filter
-    if (selectedClient) {
-      results = results.filter((item) => item.organization === selectedClient);
+    if (selectedOrganization) {
+      results = results.filter((item) => item.organization === selectedOrganization);
+    }
+    if (selectedTopic) {
+      results = results.filter((item) => item.topics?.includes(selectedTopic));
     }
 
     return results;
-  }, [enrichedContent, fuse, search, selectedWorkType, selectedProblemArea, selectedClient]);
+  }, [initialContent, fuse, search, selectedContentType, selectedIndustry, selectedOrganization, selectedTopic]);
 
   const clearFilters = useCallback(() => {
     setSearch("");
-    setSelectedWorkType(null);
-    setSelectedProblemArea(null);
-    setSelectedClient(null);
+    setSelectedContentType(null);
+    setSelectedIndustry(null);
+    setSelectedOrganization(null);
+    setSelectedTopic(null);
     setVisibleCount(24);
   }, []);
 
-  const hasFilters = search || selectedWorkType || selectedProblemArea || selectedClient;
-
-  const handleWorkTypeClick = (type: WorkType) => {
-    setSelectedWorkType(selectedWorkType === type ? null : type);
-    setVisibleCount(24);
-  };
-
-  const handleProblemAreaClick = (area: ProblemArea) => {
-    setSelectedProblemArea(selectedProblemArea === area ? null : area);
-    setVisibleCount(24);
-  };
-
-  const handleClientClick = (client: string) => {
-    setSelectedClient(selectedClient === client ? null : client);
-    setVisibleCount(24);
-  };
+  const hasFilters = search || selectedContentType || selectedIndustry || selectedOrganization || selectedTopic;
 
   return (
     <div>
@@ -202,99 +176,133 @@ export default function WorkBrowser({ initialContent, topClients }: Props) {
         </div>
       </div>
 
-      {/* Primary Filter: Work Type */}
+      {/* Content Type Filter (Primary) */}
       <div className="mb-4">
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by work type">
-          {getWorkTypeOrder().map((type) => (
+        <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by content type">
+          {contentTypes.map((type) => (
             <button
               key={type}
               type="button"
-              onClick={() => handleWorkTypeClick(type)}
+              onClick={() => {
+                setSelectedContentType(selectedContentType === type ? null : type);
+                setVisibleCount(24);
+              }}
               disabled={!mounted}
               className={`px-3 py-1.5 text-sm rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
-                selectedWorkType === type
+                selectedContentType === type
                   ? "bg-orange-500 text-white"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}
-              aria-pressed={selectedWorkType === type}
+              aria-pressed={selectedContentType === type}
             >
-              {WORK_TYPES[type].label}
-              <span className={`ml-1.5 text-xs ${selectedWorkType === type ? "text-orange-200" : "text-gray-400"}`}>
-                {workTypeCounts[type]}
+              {type}
+              <span className={`ml-1.5 text-xs ${selectedContentType === type ? "text-orange-200" : "text-gray-400"}`}>
+                {contentTypeCounts[type]}
               </span>
             </button>
           ))}
         </div>
       </div>
 
-      {/* Secondary Filters Toggle */}
+      {/* More Filters Toggle */}
       <div className="mb-6">
         <button
           type="button"
-          onClick={() => setShowSecondaryFilters(!showSecondaryFilters)}
+          onClick={() => setShowMoreFilters(!showMoreFilters)}
           disabled={!mounted}
           className="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded"
         >
           <svg
-            className={`w-4 h-4 transition-transform ${showSecondaryFilters ? "rotate-180" : ""}`}
+            className={`w-4 h-4 transition-transform ${showMoreFilters ? "rotate-180" : ""}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
-          {showSecondaryFilters ? "Hide filters" : "More filters"}
+          {showMoreFilters ? "Hide filters" : "More filters"}
         </button>
 
         {/* Secondary Filters */}
-        {showSecondaryFilters && (
+        {showMoreFilters && (
           <div className="mt-4 pt-4 border-t border-gray-100 space-y-4">
-            {/* Problem Area */}
-            <div>
-              <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Problem Area</div>
-              <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by problem area">
-                {getProblemAreaOrder()
-                  .filter((area) => problemAreaCounts[area] > 0)
-                  .map((area) => (
+            {/* Industry */}
+            {industries.length > 0 && (
+              <div>
+                <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Industry</div>
+                <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by industry">
+                  {industries.map((industry) => (
                     <button
-                      key={area}
+                      key={industry}
                       type="button"
-                      onClick={() => handleProblemAreaClick(area)}
+                      onClick={() => {
+                        setSelectedIndustry(selectedIndustry === industry ? null : industry);
+                        setVisibleCount(24);
+                      }}
                       disabled={!mounted}
                       className={`px-2.5 py-1 text-xs rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 ${
-                        selectedProblemArea === area
+                        selectedIndustry === industry
                           ? "bg-gray-800 text-white"
                           : "bg-gray-50 text-gray-600 hover:bg-gray-100"
                       }`}
-                      aria-pressed={selectedProblemArea === area}
+                      aria-pressed={selectedIndustry === industry}
                     >
-                      {PROBLEM_AREAS[area].label}
-                      <span className={`ml-1 ${selectedProblemArea === area ? "text-gray-400" : "text-gray-400"}`}>
-                        {problemAreaCounts[area]}
-                      </span>
+                      {industry}
+                      <span className="ml-1 text-gray-400">{industryCounts[industry]}</span>
                     </button>
                   ))}
+                </div>
               </div>
-            </div>
+            )}
 
-            {/* Client */}
+            {/* Client/Organization */}
             <div>
               <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Client</div>
               <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by client">
-                {topClients.map((client) => (
+                {organizations.map((org) => (
                   <button
-                    key={client}
+                    key={org}
                     type="button"
-                    onClick={() => handleClientClick(client)}
+                    onClick={() => {
+                      setSelectedOrganization(selectedOrganization === org ? null : org);
+                      setVisibleCount(24);
+                    }}
                     disabled={!mounted}
                     className={`px-2.5 py-1 text-xs rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 ${
-                      selectedClient === client
+                      selectedOrganization === org
                         ? "bg-gray-800 text-white"
                         : "bg-gray-50 text-gray-600 hover:bg-gray-100"
                     }`}
-                    aria-pressed={selectedClient === client}
+                    aria-pressed={selectedOrganization === org}
                   >
-                    {client}
+                    {org}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Topics */}
+            <div>
+              <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Topics</div>
+              <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by topic">
+                {topics.map((topic) => (
+                  <button
+                    key={topic}
+                    type="button"
+                    onClick={() => {
+                      setSelectedTopic(selectedTopic === topic ? null : topic);
+                      setVisibleCount(24);
+                    }}
+                    disabled={!mounted}
+                    className={`px-2.5 py-1 text-xs rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 ${
+                      selectedTopic === topic
+                        ? "bg-gray-800 text-white"
+                        : "bg-gray-50 text-gray-600 hover:bg-gray-100"
+                    }`}
+                    aria-pressed={selectedTopic === topic}
+                  >
+                    {topic}
+                    <span className="ml-1 text-gray-400">{topicCounts[topic]}</span>
                   </button>
                 ))}
               </div>
@@ -324,7 +332,7 @@ export default function WorkBrowser({ initialContent, topClients }: Props) {
         )}
       </div>
 
-      {/* Content grid */}
+      {/* Content list */}
       <div className="grid gap-3">
         {filteredContent.slice(0, visibleCount).map((item) => (
           <a
@@ -340,15 +348,18 @@ export default function WorkBrowser({ initialContent, topClients }: Props) {
                   {search ? highlightMatch(item.title, search) : item.title}
                 </h3>
                 <p className="text-sm text-gray-500 mt-1">
-                  {search ? highlightMatch(item.summary, search) : item.summary}
+                  {item.organization}
+                  {item.publication && ` · ${item.publication}`}
                 </p>
-                <div className="flex items-center gap-2 mt-2">
+                <div className="flex items-center gap-2 mt-2 flex-wrap">
                   <span className="text-xs px-2 py-0.5 rounded-full bg-orange-50 text-orange-700">
-                    {WORK_TYPES[item.workType].label}
+                    {item.contentType}
                   </span>
-                  <span className="text-xs text-gray-400">
-                    {item.organization}
-                  </span>
+                  {item.industry?.[0] && (
+                    <span className="text-xs text-gray-400">
+                      {item.industry[0]}
+                    </span>
+                  )}
                 </div>
               </div>
               <div className="flex flex-col items-end gap-2 shrink-0">

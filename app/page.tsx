@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { getPublishedContent, formatDate, getStats } from "@/lib/content";
 import { getFeaturedContent } from "@/lib/featured";
-import { getWorkType, WORK_TYPES } from "@/lib/taxonomy";
 
 export default function Home() {
   const recentContent = getPublishedContent().slice(0, 5);
@@ -77,7 +76,7 @@ export default function Home() {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-50 text-orange-700">
-                      {piece.workTypeLabel}
+                      {piece.contentType}
                     </span>
                     {piece.publication && piece.publication !== "LinkedIn" && (
                       <span className="text-xs text-gray-400">{piece.publication}</span>
@@ -87,7 +86,7 @@ export default function Home() {
                     {piece.title}
                   </h3>
                   <p className="text-sm text-gray-500">
-                    {piece.organization} · {piece.summary}
+                    {piece.organization}
                   </p>
                 </div>
                 <svg
@@ -169,7 +168,7 @@ export default function Home() {
                     </h3>
                     <p className="text-sm text-gray-500 mt-1">
                       {piece.organization}
-                      {piece.contentType && ` · ${WORK_TYPES[getWorkType(piece.contentType)].label}`}
+                      {piece.contentType && ` · ${piece.contentType}`}
                     </p>
                   </div>
                   <span className="text-xs text-gray-400 shrink-0 pt-1">

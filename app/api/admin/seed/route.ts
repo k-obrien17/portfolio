@@ -27,6 +27,7 @@ export async function POST() {
       publication: item.publication,
       person: item.person,
       organization: item.organization,
+      industry: (item as { industry?: string[] }).industry || [],
       topics: item.topics || [],
       tags: item.tags || [],
     }));

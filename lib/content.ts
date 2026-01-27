@@ -1,5 +1,8 @@
-import contentData from "@/data/content.json";
+import rawContentData from "@/data/content.json";
 import { ContentItem } from "./types";
+
+// Cast imported JSON to proper type
+const contentData = rawContentData as ContentItem[];
 
 // Re-export types for convenience
 export type { ContentItem } from "./types";
