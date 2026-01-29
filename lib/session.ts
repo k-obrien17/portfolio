@@ -1,11 +1,6 @@
 import crypto from "crypto";
 
-const SESSION_SECRET =
-  process.env.SESSION_SECRET ||
-  crypto
-    .createHash("sha256")
-    .update((process.env.ADMIN_PASSWORD || "") + (process.env.SITE_PASSWORD || ""))
-    .digest("hex");
+const SESSION_SECRET = process.env.SESSION_SECRET || crypto.randomBytes(32).toString("hex");
 
 export function createToken(scope: "site" | "admin"): string {
   const nonce = crypto.randomBytes(16).toString("hex");
@@ -30,8 +25,7 @@ export function verifyToken(token: string, expectedScope: "site" | "admin"): boo
 }
 
 export function timingSafeEqual(a: string, b: string): boolean {
-  const bufA = Buffer.from(a);
-  const bufB = Buffer.from(b);
-  if (bufA.length !== bufB.length) return false;
-  return crypto.timingSafeEqual(bufA, bufB);
+  const hashA = crypto.createHash("sha256").update(a).digest();
+  const hashB = crypto.createHash("sha256").update(b).digest();
+  return crypto.timingSafeEqual(hashA, hashB);
 }
