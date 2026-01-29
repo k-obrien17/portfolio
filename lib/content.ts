@@ -110,6 +110,41 @@ export function formatDate(dateString: string): string {
   });
 }
 
+// Get filter dropdown options with counts from the full dataset
+export function getContentFilterOptions() {
+  const typeCounts: Record<string, number> = {};
+  const industryCounts: Record<string, number> = {};
+  const orgCounts: Record<string, number> = {};
+  const topicCounts: Record<string, number> = {};
+
+  contentData.forEach((item) => {
+    if (item.contentType) typeCounts[item.contentType] = (typeCounts[item.contentType] || 0) + 1;
+    if (item.organization) orgCounts[item.organization] = (orgCounts[item.organization] || 0) + 1;
+    if (item.industry) {
+      item.industry.forEach((ind) => {
+        if (ind) industryCounts[ind] = (industryCounts[ind] || 0) + 1;
+      });
+    }
+    if (item.topics) {
+      item.topics.forEach((t) => {
+        if (t) topicCounts[t] = (topicCounts[t] || 0) + 1;
+      });
+    }
+  });
+
+  const sortByCount = (counts: Record<string, number>) =>
+    Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([key, count]) => ({ value: key, count }));
+
+  return {
+    contentTypes: sortByCount(typeCounts),
+    industries: sortByCount(industryCounts),
+    organizations: sortByCount(orgCounts),
+    topics: sortByCount(topicCounts),
+  };
+}
+
 // Stats for the portfolio
 export function getStats() {
   return {

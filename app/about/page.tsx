@@ -71,9 +71,35 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* What I Do */}
+      {/* Services */}
       <section className="mb-16">
         <h2 className="text-xl font-semibold text-gray-900 mb-6">What I do</h2>
+        <div className="grid md:grid-cols-2 gap-6 mb-10">
+          <div className="p-6 bg-gray-50 rounded-lg">
+            <h3 className="font-medium text-gray-900 mb-2">Executive Ghostwriting</h3>
+            <p className="text-sm text-gray-600">
+              LinkedIn posts, bylines, and thought leadership content that builds your personal brand and positions you as an industry voice.
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-lg">
+            <h3 className="font-medium text-gray-900 mb-2">Content Strategy</h3>
+            <p className="text-sm text-gray-600">
+              End-to-end content programs that align with business goals, from editorial calendars to distribution strategy.
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-lg">
+            <h3 className="font-medium text-gray-900 mb-2">Long-form Content</h3>
+            <p className="text-sm text-gray-600">
+              White papers, case studies, and reports that demonstrate expertise and generate qualified leads.
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-lg">
+            <h3 className="font-medium text-gray-900 mb-2">Newsletter & Blog</h3>
+            <p className="text-sm text-gray-600">
+              Consistent, high-quality content that keeps your audience engaged and positions your company as a thought leader.
+            </p>
+          </div>
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {expertise.map((group) => (
             <div key={group.category}>

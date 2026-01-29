@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { getPublishedContent, formatDate, getStats } from "@/lib/content";
+import { getStats } from "@/lib/content";
 import { getFeaturedContent } from "@/lib/featured";
 
 export default function Home() {
-  const recentContent = getPublishedContent().slice(0, 5);
   const featuredContent = getFeaturedContent();
   const stats = getStats();
 
@@ -107,80 +106,6 @@ export default function Home() {
             </a>
           ))}
         </div>
-      </section>
-
-      {/* What I Do */}
-      <section className="mb-20">
-        <h2 className="text-xl font-semibold text-gray-900 mb-6">What I do</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <h3 className="font-medium text-gray-900 mb-2">Executive Ghostwriting</h3>
-            <p className="text-sm text-gray-600">
-              LinkedIn posts, bylines, and thought leadership content that builds your personal brand and positions you as an industry voice.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <h3 className="font-medium text-gray-900 mb-2">Content Strategy</h3>
-            <p className="text-sm text-gray-600">
-              End-to-end content programs that align with business goals, from editorial calendars to distribution strategy.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <h3 className="font-medium text-gray-900 mb-2">Long-form Content</h3>
-            <p className="text-sm text-gray-600">
-              White papers, case studies, and reports that demonstrate expertise and generate qualified leads.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <h3 className="font-medium text-gray-900 mb-2">Newsletter & Blog</h3>
-            <p className="text-sm text-gray-600">
-              Consistent, high-quality content that keeps your audience engaged and positions your company as a thought leader.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Recent Work */}
-      <section className="mb-20">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-semibold text-gray-900">Recent work</h2>
-          <Link
-            href="/writing"
-            className="text-sm text-gray-500 hover:text-orange-500 transition-colors"
-          >
-            View all →
-          </Link>
-        </div>
-        {recentContent.length > 0 ? (
-          <div className="space-y-1">
-            {recentContent.map((piece) => (
-              <a
-                key={piece.id}
-                href={piece.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block py-4 border-b border-gray-100 hover:bg-gray-50 -mx-4 px-4 transition-colors rounded focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-inset"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-gray-900 group-hover:text-orange-600 transition-colors font-medium">
-                      {piece.title}
-                    </h3>
-                    <p className="text-sm text-gray-500 mt-1">
-                      {piece.organization}
-                      {piece.contentType && ` · ${piece.contentType}`}
-                    </p>
-                  </div>
-                  <span className="text-xs text-gray-400 shrink-0 pt-1">
-                    {formatDate(piece.published)}
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
-        ) : (
-          <p className="text-gray-500">Content coming soon.</p>
-        )}
       </section>
 
       {/* CTA */}
