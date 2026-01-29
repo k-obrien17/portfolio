@@ -6,6 +6,7 @@ import { submitContact } from "./actions";
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
+  const [formKey, setFormKey] = useState(0);
   const submitting = useRef(false);
 
   async function handleSubmit(formData: FormData) {
@@ -30,7 +31,7 @@ export default function ContactForm() {
       <div className="p-6 bg-green-50 border border-green-200 rounded-lg">
         <p className="text-green-800">{message}</p>
         <button
-          onClick={() => { setStatus("idle"); setMessage(""); }}
+          onClick={() => { setStatus("idle"); setMessage(""); setFormKey(k => k + 1); }}
           className="mt-3 text-sm text-green-700 underline hover:text-green-900"
         >
           Send another message
@@ -40,7 +41,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form action={handleSubmit} className="space-y-6" onChange={() => { if (status === "error") setStatus("idle"); }}>
+    <form key={formKey} action={handleSubmit} className="space-y-6" onChange={() => { if (status === "error") setStatus("idle"); }}>
       {/* Honeypot field - hidden from humans, bots will fill it */}
       <div className="absolute -left-[9999px]" aria-hidden="true">
         <label htmlFor="website">Website</label>

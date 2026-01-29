@@ -169,8 +169,8 @@ export async function searchContent(query: string): Promise<ContentItem[]> {
       person ILIKE ${searchTerm} OR
       organization ILIKE ${searchTerm} OR
       publication ILIKE ${searchTerm} OR
-      ${query} = ANY(tags) OR
-      ${query} = ANY(topics)
+      EXISTS (SELECT 1 FROM unnest(tags) t WHERE t ILIKE ${searchTerm}) OR
+      EXISTS (SELECT 1 FROM unnest(topics) t WHERE t ILIKE ${searchTerm})
     ORDER BY published DESC NULLS LAST
   `;
   return (rows as DbContentRow[]).map(rowToContentItem);
