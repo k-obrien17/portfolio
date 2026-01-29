@@ -3,7 +3,6 @@ import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
-import AuthGate from "@/components/auth-gate";
 import StructuredData from "@/components/structured-data";
 
 const inter = Inter({
@@ -71,20 +70,18 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-white text-gray-900`}
       >
-        <AuthGate>
-          {/* Skip to main content link for accessibility */}
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-orange-500 focus:text-white focus:rounded-lg focus:outline-none"
-          >
-            Skip to main content
-          </a>
-          <Nav />
-          <main id="main-content" className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </AuthGate>
+        {/* Skip to main content link for accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-orange-500 focus:text-white focus:rounded-lg focus:outline-none"
+        >
+          Skip to main content
+        </a>
+        <Nav />
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

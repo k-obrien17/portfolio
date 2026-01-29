@@ -31,6 +31,9 @@ export async function submitContact(formData: FormData): Promise<ContactResult> 
     };
   }
 
+  // Escape HTML to prevent XSS in email
+  const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
   try {
     // If no API key, fall back to logging (for development)
     if (!process.env.RESEND_API_KEY) {
@@ -50,15 +53,15 @@ export async function submitContact(formData: FormData): Promise<ContactResult> 
       from: "Portfolio Contact <onboarding@resend.dev>", // Change to your verified domain
       to: "keith@totalemphasis.com",
       replyTo: email,
-      subject: `New inquiry from ${name}`,
+      subject: `New inquiry from ${esc(name)}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
       html: `
         <h2>New Portfolio Inquiry</h2>
-        <p><strong>From:</strong> ${name}</p>
-        <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+        <p><strong>From:</strong> ${esc(name)}</p>
+        <p><strong>Email:</strong> <a href="mailto:${esc(email)}">${esc(email)}</a></p>
         <hr />
         <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, "<br />")}</p>
+        <p>${esc(message).replace(/\n/g, "<br />")}</p>
       `,
     });
 
