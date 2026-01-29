@@ -54,6 +54,7 @@ export async function PUT(
       publication: body.publication,
       person: body.person,
       organization: body.organization,
+      industry: body.industry,
       topics: body.topics,
       tags: body.tags,
     });

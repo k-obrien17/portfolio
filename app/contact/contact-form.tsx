@@ -1,13 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { submitContact } from "./actions";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
+  const submitting = useRef(false);
 
   async function handleSubmit(formData: FormData) {
+    if (submitting.current) return;
+    submitting.current = true;
     setStatus("loading");
 
     const result = await submitContact(formData);
@@ -19,18 +22,31 @@ export default function ContactForm() {
       setStatus("error");
       setMessage(result.message);
     }
+    submitting.current = false;
   }
 
   if (status === "success") {
     return (
       <div className="p-6 bg-green-50 border border-green-200 rounded-lg">
         <p className="text-green-800">{message}</p>
+        <button
+          onClick={() => { setStatus("idle"); setMessage(""); }}
+          className="mt-3 text-sm text-green-700 underline hover:text-green-900"
+        >
+          Send another message
+        </button>
       </div>
     );
   }
 
   return (
-    <form action={handleSubmit} className="space-y-6">
+    <form action={handleSubmit} className="space-y-6" onChange={() => { if (status === "error") setStatus("idle"); }}>
+      {/* Honeypot field - hidden from humans, bots will fill it */}
+      <div className="absolute -left-[9999px]" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+      </div>
+
       <div>
         <label htmlFor="name" className="block text-sm font-medium mb-2">
           Name

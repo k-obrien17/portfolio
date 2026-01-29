@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const links = [
   { href: "/", label: "Home" },
@@ -14,6 +14,11 @@ export default function Nav() {
   const pathname = usePathname();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [hasSiteAuth, setHasSiteAuth] = useState(false);
+
+  useEffect(() => {
+    fetch("/api/auth/check").then(res => setHasSiteAuth(res.ok)).catch(() => {});
+  }, []);
 
   // Don't show nav on login page
   if (pathname === "/login") return null;
@@ -43,7 +48,7 @@ export default function Nav() {
                   <Link
                     href={link.href}
                     className={`text-sm transition-colors hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded px-1 ${
-                      pathname === link.href
+                      (link.href === "/" ? pathname === "/" : pathname.startsWith(link.href))
                         ? "text-orange-500 font-medium"
                         : "text-gray-600"
                     }`}
@@ -64,27 +69,29 @@ export default function Nav() {
               >
                 Contact
               </Link>
-              <button
-                onClick={handleLogout}
-                className="text-xs text-gray-400 hover:text-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded"
-                title="Log out"
-              >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
+              {hasSiteAuth && (
+                <button
+                  onClick={handleLogout}
+                  className="text-xs text-gray-400 hover:text-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded"
+                  title="Log out"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                  />
-                </svg>
-                <span className="sr-only">Log out</span>
-              </button>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                    />
+                  </svg>
+                  <span className="sr-only">Log out</span>
+                </button>
+              )}
             </div>
           </div>
 
@@ -131,7 +138,7 @@ export default function Nav() {
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className={`block py-2 text-sm transition-colors hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded ${
-                      pathname === link.href
+                      (link.href === "/" ? pathname === "/" : pathname.startsWith(link.href))
                         ? "text-orange-500 font-medium"
                         : "text-gray-600"
                     }`}
@@ -141,26 +148,28 @@ export default function Nav() {
                 </li>
               ))}
             </ul>
-            <button
-              onClick={handleLogout}
-              className="mt-4 pt-4 border-t border-gray-100 w-full text-left text-sm text-gray-400 hover:text-gray-600 transition-colors flex items-center gap-2"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
+            {hasSiteAuth && (
+              <button
+                onClick={handleLogout}
+                className="mt-4 pt-4 border-t border-gray-100 w-full text-left text-sm text-gray-400 hover:text-gray-600 transition-colors flex items-center gap-2"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                />
-              </svg>
-              Log out
-            </button>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                  />
+                </svg>
+                Log out
+              </button>
+            )}
           </div>
         )}
       </nav>

@@ -29,12 +29,12 @@ export function searchContent(query: string): ContentPiece[] {
 
   return contentData.filter((piece) => {
     return (
-      piece.title.toLowerCase().includes(lowerQuery) ||
-      piece.publication.toLowerCase().includes(lowerQuery) ||
-      piece.person.toLowerCase().includes(lowerQuery) ||
-      piece.organization.toLowerCase().includes(lowerQuery) ||
-      piece.topics.some((t) => t.toLowerCase().includes(lowerQuery)) ||
-      piece.tags.some((t) => t.toLowerCase().includes(lowerQuery))
+      piece.title?.toLowerCase().includes(lowerQuery) ||
+      piece.publication?.toLowerCase().includes(lowerQuery) ||
+      piece.person?.toLowerCase().includes(lowerQuery) ||
+      piece.organization?.toLowerCase().includes(lowerQuery) ||
+      piece.topics?.some((t) => t.toLowerCase().includes(lowerQuery)) ||
+      piece.tags?.some((t) => t.toLowerCase().includes(lowerQuery))
     );
   });
 }

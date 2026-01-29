@@ -7,12 +7,18 @@ interface ContactResult {
   message: string;
 }
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 export async function submitContact(formData: FormData): Promise<ContactResult> {
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
   const message = formData.get("message") as string;
+  const honeypot = formData.get("website") as string;
+
+  // Honeypot: if filled, silently reject (bots fill hidden fields)
+  if (honeypot) {
+    return { success: true, message: "Thank you for your message! I'll get back to you soon." };
+  }
 
   // Validate inputs
   if (!name || !email || !message) {
@@ -36,7 +42,7 @@ export async function submitContact(formData: FormData): Promise<ContactResult> 
 
   try {
     // If no API key, fall back to logging (for development)
-    if (!process.env.RESEND_API_KEY) {
+    if (!resend) {
       console.log("Contact form submission (no RESEND_API_KEY set):", {
         name,
         email,
