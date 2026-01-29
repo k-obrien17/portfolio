@@ -17,7 +17,7 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   const parts = text.split(regex);
 
   return parts.map((part, i) =>
-    regex.test(part) ? (
+    part.toLowerCase() === query.toLowerCase() ? (
       <mark key={i} className="bg-orange-100 text-orange-700 rounded px-0.5">
         {part}
       </mark>

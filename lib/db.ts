@@ -120,11 +120,18 @@ export async function createContent(content: ContentItem): Promise<ContentItem> 
 // Update content
 export async function updateContent(id: string, content: Partial<ContentItem>): Promise<ContentItem | null> {
   const sql = getDb();
+  // For published: distinguish "not provided" (keep existing) from "explicitly cleared" (set null)
+  const publishedValue = content.published === undefined
+    ? undefined  // will be handled by COALESCE
+    : (content.published || null);
   const rows = await sql`
     UPDATE content SET
       title = COALESCE(${content.title}, title),
       url = COALESCE(${content.url}, url),
-      published = COALESCE(${content.published || null}, published),
+      published = CASE
+        WHEN ${content.published === undefined} THEN published
+        ELSE ${publishedValue}::date
+      END,
       content_type = COALESCE(${content.contentType}, content_type),
       publication = COALESCE(${content.publication}, publication),
       person = COALESCE(${content.person}, person),
