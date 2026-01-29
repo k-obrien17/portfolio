@@ -160,7 +160,8 @@ export async function deleteContent(id: string): Promise<boolean> {
 // Search content
 export async function searchContent(query: string): Promise<ContentItem[]> {
   const sql = getDb();
-  const searchTerm = `%${query}%`;
+  const escapedQuery = query.replace(/[%_\\]/g, "\\$&");
+  const searchTerm = `%${escapedQuery}%`;
   const rows = await sql`
     SELECT * FROM content
     WHERE

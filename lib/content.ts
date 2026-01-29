@@ -14,7 +14,9 @@ export type ContentPiece = ContentItem;
 // Get all published content sorted by date
 export function getPublishedContent(): ContentPiece[] {
   return [...contentData].sort((a, b) => {
-    return new Date(b.published).getTime() - new Date(a.published).getTime();
+    const dateA = a.published ? new Date(a.published).getTime() : 0;
+    const dateB = b.published ? new Date(b.published).getTime() : 0;
+    return dateB - dateA;
   });
 }
 
@@ -87,10 +89,10 @@ export function filterContent(filters: {
     if (filters.organization && piece.organization !== filters.organization) {
       return false;
     }
-    if (filters.topic && !piece.topics.includes(filters.topic)) {
+    if (filters.topic && !piece.topics?.includes(filters.topic)) {
       return false;
     }
-    if (filters.tag && !piece.tags.includes(filters.tag)) {
+    if (filters.tag && !piece.tags?.includes(filters.tag)) {
       return false;
     }
     return true;
@@ -98,7 +100,9 @@ export function filterContent(filters: {
 }
 
 export function formatDate(dateString: string): string {
+  if (!dateString) return "";
   const date = new Date(dateString);
+  if (isNaN(date.getTime())) return "";
   return date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",

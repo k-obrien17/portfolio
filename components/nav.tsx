@@ -17,7 +17,10 @@ export default function Nav() {
   const [hasSiteAuth, setHasSiteAuth] = useState(false);
 
   useEffect(() => {
-    fetch("/api/auth/check").then(res => setHasSiteAuth(res.ok)).catch(() => {});
+    fetch("/api/auth/check")
+      .then(res => res.ok ? res.json() : null)
+      .then(data => setHasSiteAuth(data?.passwordRequired === true))
+      .catch(() => {});
   }, []);
 
   // Don't show nav on login page
