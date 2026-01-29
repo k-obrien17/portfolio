@@ -122,7 +122,7 @@ export async function updateContent(id: string, content: Partial<ContentItem>): 
   const sql = getDb();
   // For published: distinguish "not provided" (keep existing) from "explicitly cleared" (set null)
   const publishedValue = content.published === undefined
-    ? undefined  // will be handled by COALESCE
+    ? null  // CASE branch won't use this; null is safe for parameter binding
     : (content.published || null);
   const rows = await sql`
     UPDATE content SET
@@ -195,15 +195,13 @@ export async function getFilterOptions() {
 }
 
 // Bulk insert (for seeding from JSON)
+// Uses upsert + cleanup instead of truncate-first to avoid data loss on partial failure
 export async function bulkInsertContent(items: ContentItem[]) {
   const sql = getDb();
+  const insertedIds: string[] = [];
 
-  // Clear existing data
-  await sql`TRUNCATE TABLE content`;
-
-  // Insert in batches
+  // Upsert all items (safe: existing data preserved if insert fails mid-way)
   for (const item of items) {
-    // Handle empty dates - convert empty string to null
     const publishedDate = item.published && item.published !== '' ? item.published : null;
 
     await sql`
@@ -234,7 +232,11 @@ export async function bulkInsertContent(items: ContentItem[]) {
         tags = EXCLUDED.tags,
         updated_at = CURRENT_TIMESTAMP
     `;
+    insertedIds.push(item.id);
   }
+
+  // Only remove stale rows after all inserts succeed
+  await sql`DELETE FROM content WHERE id != ALL(${insertedIds})`;
 
   return { inserted: items.length };
 }
