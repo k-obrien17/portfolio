@@ -39,7 +39,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
   if (checking) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-pulse text-gray-400">Loading...</div>
+        <div className="motion-safe:animate-pulse text-gray-400">Loading...</div>
       </div>
     );
   }
